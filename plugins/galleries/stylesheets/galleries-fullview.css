@@ -1,0 +1,204 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Album Fullview' Page Stylesheet
+   (loaded by Page: 'gallery-fullview.php')
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */	
+	
+		#content-column {
+			width:97%;
+			overflow:hidden;
+			padding-bottom:25px;
+			background-image: url(../images/content-h1-bg.jpg);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			
+			/* RETURN TO PARENT SECTION LINKS */
+			.return-to-section {
+				margin:0px 0px 20px 0px;
+				background-image:url(../images/icon-returntosection-arrow.gif);
+				background-position:0px 0px;
+				background-repeat:no-repeat;
+				color:#999999;
+				padding-left:22px;
+				position:relative;
+			}
+				.return-to-section a {
+					color:#999999;
+					text-decoration:none;
+				}
+					.return-to-section a:hover {
+						color:#666666;
+						text-decoration:none;
+					}
+			
+			/* ALBUM INFO HEADER */
+			#gallery-info {
+				border-bottom:solid 1px #ececec;
+				padding:0px 0px 0px 0px;
+				margin:0px 0px 15px 0px;
+				position:relative;
+				min-height:70px;
+			}		
+				
+				#gallery-info h2.gallery-info-name {
+					font-size:2.0em;
+					font-weight:800;
+					letter-spacing:-.25px;
+					color:#0085D3;
+					padding:0px;
+					width:425px;
+					margin-bottom:5px;
+				}
+					h2.gallery-info-name .gallery-info-photocount {
+						font-weight:400;
+						color:#cccccc;
+						margin:0px;
+						padding:0px;
+						font-size:0.8em;
+					}
+				#gallery-info p.gallery-info-description {
+					font-size:1.0em;
+					font-weight:400;
+					line-height:18px;
+					color:#999999;
+					margin-bottom:3px;
+					width:425px;
+					padding:0px;
+					margin-top:0px;
+					margin-left:0px;
+				}
+				#gallery-info p.gallery-info-datepublished {
+					font-size:11px;
+					font-weight:400;
+					color:#999999;
+					width:425px;
+				}
+			
+				/* ALBUM - NEXT/PREV PHOTO NAV */
+				#gallery-info .gallery-photo-nav {
+					width:172px;
+					position:absolute;
+					top:0px;
+					right:0px;
+					border:solid 1px #ececec;
+					padding:5px 5px 3px 5px;
+				}
+					.photo-nav-prev {
+						float:left;
+						margin-right:10px;
+						background-image:url(../images/bg-photonav-prev.gif);
+						background-position:left 18px;
+						background-repeat:no-repeat;
+					}
+						.photo-nav-prev img {
+							padding-left:20px;
+						}
+					.photo-nav-next {
+						float:left;
+						background-image:url(../images/bg-photonav-next.gif);
+						background-position:right 18px;
+						background-repeat:no-repeat;
+					}
+						.photo-nav-next img {
+							padding-right:20px;
+						}
+	
+	
+			/* ALBUM - PHOTOS */
+			#gallery-photos  {
+				overflow:hidden;
+				margin:0px;
+			}
+				#gallery-photos .gallery-photo-item  {
+					float:left;
+					min-height:150px;
+					width:155px;
+					text-align:center;
+					border:solid 1px #ececec;
+					padding:10px;
+					margin:-1px -1px 0px 0px;
+					border-bottom:none;
+				}
+					.gallery-photo-item img {
+						border:solid 1px #999999;
+					}
+					.gallery-photo-item h3.photo-item-title {
+						font-size:12px;
+						color:#C6021D;
+						font-weight:400;
+						margin:2px 0px 3px 0px;
+						padding:0px;
+					}
+						.gallery-photo-item h3.photo-item-title a {
+							color:#C6021D;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+							.gallery-photo-item h3.photo-item-title a:hover {
+								color:#333333;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}
+					.gallery-photo-item p.photo-item-comments {
+						font-size:11px;
+						color:#666666;
+						margin:5px 0px 0px 0px;
+					}	
+						.gallery-photo-item p.photo-item-comments a {
+							color:#666666;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+							.gallery-photo-item p.photo-item-comments a:hover {
+								color:#333333;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}
+							
+			/* ALBUM - INDIVIDUAL PHOTO VIEW */
+			#gallery-viewphoto  {
+				margin-bottom:25px;
+				border-bottom:solid 1px #dadada;
+				padding-bottom:20px;
+			}
+				#gallery-viewphoto h2.photo-title  {
+					font-size:16px;
+					font-weight:400;
+					color:#333333;
+					margin-bottom:10px;				
+				}
+				#gallery-viewphoto .photo-item  {
+					margin-bottom:5px;
+				}
+					#gallery-viewphoto .photo-item img {
+						border:solid 1px #dadada;
+					}
+				#gallery-viewphoto p.photo-description  {
+					font-size:12px;
+					color:#666666;
+					line-height:16px;				
+				}
+		
+	
+	/* -----------------------
+		=CONTENT RIGHT COLUMN
+	   ----------------------- */
+	   
+		#content-columnright {
+			height:100%;
+			border-right:solid 1px #ececec;
+			margin-top:10px;
+			float:left;
+			width:320px;
+			padding:10px 10px 0px 10px;
+		}

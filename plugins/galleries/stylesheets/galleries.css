@@ -1,0 +1,71 @@
+/* ------------------------------------------------
+
+   'Galleries' Plugin > Plugin-Wide Stylesheets
+   
+   * This stylesheet is loaded by any page that uses 
+     the plugin 'galleries'
+
+--------------------------------------------------- */
+
+	.top-image {
+		position:absolute;
+	}
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+	=resultview
+   ------------------------------------------------ */
+   
+	.gallery-resultview {
+		margin-top:-1px;
+		margin-right:-1px;
+		padding:12px 0px 12px 0px;
+		position:relative;
+		overflow: hidden;
+		text-align:center;
+		float:left;
+		text-align:center;
+		/*border-left:solid 1px #ececec;
+		border-bottom:solid 1px #ececec;
+		border-right:solid 1px #ececec;*/
+		margin:0 50px 15px 45px;
+		width:169px;
+	}
+		.gallery-resultview .gallery-resultview-thumbs {
+			margin-bottom:10px;
+		}
+			.gallery-resultview img.gallery-resultview-pic {
+				border:solid 1px #cccccc;
+				width:100%;
+			}
+		.gallery-resultview h3.gallery-resultview-name {
+			font-size:1.2em;
+			font-weight:400;
+			color:#666666;
+			padding:0px;
+		}
+			.gallery-resultview h3.gallery-resultview-name a {
+				color:#C6021D;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				.gallery-resultview h3.gallery-resultview-name a:hover {
+					color:#333333;
+					text-decoration:none;
+				}
+		.gallery-resultview span.gallery-resultview-stats {
+			margin-left:5px;
+			color:#999999;			
+		}
+		.gallery-resultview p.gallery-resultview-description {
+			font-size:1.0em;
+			line-height:16px;
+			color:#666666;
+			margin-top:5px;
+		}
+		.gallery-resultview p.gallery-resultview-datepublished {
+			font-size:11px;
+			line-height:16px;
+			color:#999999;
+			margin-top:10px
+		}

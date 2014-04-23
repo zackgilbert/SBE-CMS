@@ -1,0 +1,158 @@
+/* ------------------------------------------------
+
+   'SSM' Template > 'Stats' Page Stylesheet
+   (loaded by Page: 'stats.php')
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=FORMS
+   ------------------------------------------------ */
+   	
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+	
+	#content {
+		width:960px;
+		margin:0px auto;
+		padding:0px;
+		overflow:hidden;
+	}
+	
+		#content-header {
+			margin-bottom:10px;
+		}
+		
+			#content-header p.header-section {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+			}
+			
+			#content-header p.header-backtoall {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+				padding-left:20px;
+				background-image: url(../images/icon-backtoall.gif);
+				background-position:middle left;
+				background-repeat:no-repeat;
+			}
+				p.header-backtoall a {
+					color:#999999;
+					text-decoration:none;
+				}
+					p.header-backtoall a:hover {
+						color:#999999;
+						text-decoration:none;
+						border-bottom:dotted 1px #999999
+					}
+		
+			#content-header h2.header-title {
+				position:relative;
+				font-size:24px;
+				font-weight:400;
+				letter-spacing:-0.5px;
+				color:#333333;
+				margin-bottom:20px;
+				border-bottom:solid 1px #dddddd;
+				padding-bottom:4px;
+			}	
+				h2.header-title span {
+					position:absolute;
+					top:-3px;
+					right:1px;
+					font-size:0.6em;
+					cursor: pointer;
+				}	
+	
+	/* -----------------------
+		=CONTENT COLUMN HEADER
+	   ----------------------- */
+	   
+		#content-2col-header {
+			background-color:#ffffff;
+			margin:0px;
+			padding:15px;
+			border:solid 1px #ececec;
+			border-bottom:none;
+		}
+		
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+	   
+		#content-2col-left {
+			background-color:#ffffff;
+			float:left;
+			width:449px;
+			margin:0px;
+			padding:15px;
+			border-left:solid 1px #ececec;
+			border-bottom:solid 1px #ececec;
+		}
+			
+			.stat-container {
+				margin-bottom:20px;
+			
+			}
+				.stat-container h3.stat-title {
+					background-color:#6CA2C1;
+					font-size:14px;
+					font-weight:400;
+					margin:0px 5px;
+					padding:8px 0px;
+					text-align:center;
+					color:#ffffff;
+					/*background-image:url(../images/bg-stats-title.gif);
+					background-position:top left;
+					background-repeat:repeat-x;*/
+					
+				}
+			
+			.stat-totals-container {
+				margin-top:10px;	
+				overflow:hidden;
+				padding:0px 10px 0px 10px;		
+			}
+				.stat-totals-container h3.stat-totals-title {
+					margin:0px;			
+					padding:0px 0px 3px 0px;
+					border-bottom:solid 1px #dddddd;
+					font-size:14px;
+					font-weight:400;
+					color:#666666;
+				}
+				.stat-totals-container .stat-totals-item {
+					margin:0px;			
+					border-left:solid 1px #dddddd;
+					float:left;
+					padding:10px 30px 10px 10px;
+					color:#666666;
+					font-size:24px;
+				}
+					.stat-totals-item h4 {
+						font-size:12px;
+						font-weight:400;
+						text-transform:uppercase;
+						margin-bottom:6px;
+						color:#999999;
+					}
+			
+	/* -----------------------
+		=CONTENT RIGHT COLUMN
+	   ----------------------- */
+	
+		#content-2col-right {
+			float:left;
+			width:449px;
+			margin:0px;
+			background-color:#FFFFFF;
+			padding:15px;
+			border-right:solid 1px #ececec;
+			border-bottom:solid 1px #ececec;
+		}	
+			
+				

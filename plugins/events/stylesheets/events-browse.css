@@ -1,0 +1,141 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Events Browse' Page Stylesheet
+   (loaded by Page: 'events-browse.php')
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   		
+	 
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+	   
+			
+		/* RETURN TO PARENT SECTION LINKS */
+			.return-to-section {
+				margin:0px 0px 20px 0px;
+				background-image:url(../images/icon-returntosection-arrow.gif);
+				background-position:0px 0px;
+				background-repeat:no-repeat;
+				color:#999999;
+				padding-left:22px;
+				position:relative;
+			}
+				.return-to-section a {
+					color:#999999;
+					text-decoration:none;
+				}
+					.return-to-section a:hover {
+						color:#666666;
+						text-decoration:none;
+					}
+	
+			/* BROWSE - CONTENT TYPE NAME */
+			h2.browse-title {
+				font-size:24px;
+				font-weight:400;
+				letter-spacing:-.25px;
+				color:#0085D3;
+				padding:0px;
+				width:425px;
+				margin:0px 0px 5px 0px;
+			}
+				
+				/* BROWSE - NUMBER VIEWING OUT OF TOTAL NUMBER */
+				h2.browse-title .browse-viewing {
+					position:absolute;
+					top:10px;
+					right:0px;
+					color:#999999;
+					font-size:12px;
+					letter-spacing:normal;
+				}
+		
+		/* -----------------------
+			=EVENTS CALENDAR
+		   ----------------------- */
+		   
+			#content-events-calendar {
+				border:solid 1px #ececec;
+				padding:15px;
+				overflow:hidden;
+				background-color:#fafafa;
+				margin:0px;
+			}
+				#content-events-calendar .events-calendar-view {
+					float:left;
+					margin:0px 0px 0px 125px;
+					position:relative;
+				}
+					.events-calendar-view h3.events-calendar-title {
+						font-size:12px;
+						font-weight:400;
+						text-transform:uppercase;
+						color:#C8292A;
+						padding-bottom:3px;	
+						margin-bottom:14px;			
+					}
+					#content-events-calendar table {
+						width:250px;
+						background-color:#FFFFFF;
+						border-left:1px solid #B9B9B9;
+						border-top:1px solid #a7a7a7;			
+					}
+			
+		/* ---------------------------
+			=EVENTS - SEARCH RESULTS
+		   --------------------------- */
+		 
+		 	.event-results {
+				margin:30px 0px;
+			}
+		   
+			.event-results-header {
+				margin-bottom:15px;
+			}
+				.event-results-header h3.results-header-title {
+					border-bottom:solid 1px #dadada;
+					font-size:16px;
+					font-weight:400;
+					position:relative;
+					padding:0px 165px 3px 0px;
+				}
+					h3.results-header-title .results-viewing {
+						position:absolute;
+						top:5px;
+						right:0px;
+						color:#999999;
+						font-size:12px;
+					}
+					
+			/* SEARCH RESULTS - NONE FOUND */
+			.results-nonefound {
+				font-size:12px;
+				color:#666666;
+				margin:35px 0px 15px 0px;
+				text-align:center;
+			}
+			
+	/* -----------------------------------------------
+		=CONTENT RIGHT COLUMN
+	   ----------------------------------------------- */	
+	   
+		#content-columnright {
+			border-right:solid 1px #ececec;
+			float:left;	
+			margin-top:10px;
+			padding:10px 11px 0px 11px;
+			width:320px;
+		}
+		
+			/* =AD - MEDIUM RECTANGE (fits 300px by 250px ad) */
+			#content-columnright .ad-medrec {
+				background-color:#ECECEC;
+				padding:5px;
+				margin-bottom:15px;
+				text-align:center;
+			}

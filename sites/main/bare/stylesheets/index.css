@@ -1,0 +1,12 @@
+	
+	#content-leftcolumn {
+		width:70%;
+		float:left;
+	}
+	
+	#content-rightcolumn {
+		width:25%;
+		float:left;
+		padding:0px 0px 0px 25px;
+		border-left:solid 2px #efecdc;
+	}

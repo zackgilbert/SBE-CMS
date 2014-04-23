@@ -1,0 +1,82 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Blog Resultview' Page Stylesheet
+   (loaded by Page: 'blog-resultview.php')
+   
+   * This stylesheet is loaded by any page that calls 
+     the include 'blog-resultview.php'     
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   	
+	.blog-resultview {
+		border-top:solid 1px #ececec;
+		border-bottom:solid 1px #ececec;
+		margin-top:-1px;
+		padding:12px 0px 12px 0px;
+		position:relative;
+		overflow: hidden;
+	}
+		.blog-resultview img.blog-resultview-pic {
+			float:left;
+			margin-right:15px;
+			border:solid 1px #DADADA;
+		}
+		.blog-resultview p.blog-resultview-section {
+			font-size:11px;
+			color:#146AA1;
+			margin-bottom:5px;
+			text-transform:uppercase;
+		}
+		.blog-resultview h3.blog-resultview-title {
+			font-size:16px;
+			font-weight:400;
+			color:#333333;
+			margin-bottom:5px;
+			width:500px;
+		}
+			.blog-resultview h3.blog-resultview-title a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #999999;
+			}
+				.blog-resultview h3.blog-resultview-title a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #999999;
+				}		
+		.blog-resultview p.blog-resultview-byline {
+			font-size:11px;
+			line-height:16px;
+			color:#999999;
+			margin-bottom:7px;
+		}
+			.blog-resultview p.blog-resultview-byline a {
+				color:#999999;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				.blog-resultview p.blog-resultview-byline a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		.blog-resultview p.blog-resultview-body {
+			font-size:12px;
+			line-height:16px;
+			color:#666666;
+		}
+			.blog-resultview p.blog-resultview-body a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				.blog-resultview p.blog-resultview-body a:hover {
+					color:#146AA1;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		

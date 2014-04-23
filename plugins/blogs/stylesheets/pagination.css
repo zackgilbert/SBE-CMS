@@ -1,0 +1,86 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Pagination' Stylesheet
+   
+   * This stylesheet is loaded by any page that calls 
+     the include 'pagination.php'     
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	.pagination-container {
+		margin:25px 0px 25px 0px;
+	}
+
+		ul.pagination {
+			text-align:center;
+			margin:0px;
+			padding:0px;
+		}
+			ul.pagination li {
+				display:inline;
+				list-style:none;
+				border:0px;
+				margin:0px;
+			}
+				ul.pagination li a {
+				
+				}		
+					ul.pagination li a:hover {
+				
+					}	
+			ul.pagination li.current {
+				color:#333333;	
+				padding:2px 5px;
+				margin-right:2px;
+				/*font-weight:800;
+				border:solid 1px #ececec;*/			
+			}				
+			ul.pagination li.page {
+				margin-right:2px;				
+			}
+				ul.pagination li.page a {
+					color:#E8631B;
+					padding:2px 5px;	
+					border:solid 1px #dadada;
+					text-decoration:none;			
+				}
+					ul.pagination li.page a:hover {
+						background-color:#E8631B;
+						color:#ffffff;
+						border:solid 1px #E8631B;			
+					}
+			ul.pagination li.separator {
+				color:#666666;				
+			}
+			ul.pagination li.next {
+				color:#999999;
+				margin-left:5px;
+			}
+				ul.pagination li.next a {
+					color:#E8631B;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;					
+				}
+					ul.pagination li.next a:hover {
+						color:#333333;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;					
+					}
+			ul.pagination li.previous {
+				color:#999999;
+				margin-right:6px;
+			}
+				ul.pagination li.previous a {
+					color:#E8631B;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+					ul.pagination li.previous a:hover {
+						color:#333333;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;					
+					}

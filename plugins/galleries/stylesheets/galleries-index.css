@@ -1,0 +1,37 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Gallery Index' Page Stylesheet
+   (loaded by Page: 'gallery-index.php')
+   
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	/* -----------------------
+		=CONTENT CONTAINER
+	   ----------------------- */
+		
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+			
+		#content-column {
+			width:100%;
+			overflow:hidden;
+			padding-bottom:25px;
+		}
+		
+			h2.content-title {
+				color:#0085D3;
+				font-size:2.6em;
+				letter-spacing:-.025em;
+				margin:0px 0px 20px 0px;
+				padding-top:30px;
+				font-weight:800;
+				background-image: url(../images/content-h1-bg.jpg);
+				background-position:top left;
+				background-repeat:no-repeat;
+			}
+		

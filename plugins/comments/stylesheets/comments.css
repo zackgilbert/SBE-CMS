@@ -1,0 +1,215 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Comments' Stylesheet
+   
+   * This stylesheet is loaded by any page that calls 
+     the include 'comments.php'     
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	/* COMMENTS LIST */	
+	.content-comments {
+		padding-top:20px;
+		clear: both;
+		margin:0px 0px;
+	}
+	
+		.content-comments h3.comment-title {
+			border-top:solid 1px #ececec;
+			padding-top: 15px;
+			font-size:18px;
+			font-weight:400;
+			letter-spacing:-0.25px;
+			color:#666666;
+			margin-bottom:2px;
+			padding-left:0px;				
+		}
+		.content-comments p.comment-disclaimer {
+			font-size:12px;
+			color:#999999;
+			margin-bottom:10px;
+			padding-bottom:15px;				
+			border-bottom:solid 1px #e7e7e7;
+			padding-left:0px;
+		}
+		
+		/* COMMENT ITEM */
+		.comment-item {
+			border-bottom:solid 1px #e7e7e7;
+			padding:10px 10px 10px 45px;
+			background-image:url(../images/bg-comment-quotes.gif);
+			background-position:7px 8px;
+			background-repeat:no-repeat;
+			position:relative;
+			min-height:60px;					
+		}
+			/* Only displayed on comments pending moderation */
+			.unapproved {
+			 	/*background-color:#f8f8f8;*/
+			}
+			.comment-item img.comment-pic {
+				height:50px;
+				width:50px;
+				float:left;
+				margin-right:10px;	
+				border:solid 1px #dadada;				
+			}
+			.comment-item h4.comment-name {	
+				font-size:14px;
+				font-weight:400;				
+				color:#666666;
+				margin-bottom:7px;
+			}
+				.comment-item h4.comment-name a {	
+					color:#666666;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+					.comment-item h4.comment-name a:hover {	
+						color:#C8292A;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;
+					}
+			.comment-item .star-rating-container {
+				margin: 0px;
+				padding: 1px 5px;
+				position: absolute;
+				top:6px;
+				right:0px;
+				width: 95px;
+				height: 17px;
+				text-align: center;
+				overflow: auto;
+			}
+			.comment-item span.comment-time  {	
+				font-size:11px;				
+				color:#999999;
+				margin-left:3px;
+			}
+			.comment-item .comment-body p  {	
+				font-size:12px;				
+				color:#666666;
+				line-height:18px;
+				margin-bottom:8px;
+				padding-left:60px;
+			}
+				.comment-item .comment-body p a {				
+					color:#146AA1;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+					.comment-item .comment-body p a:hover {				
+						color:#C8292A;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;
+					}
+				.comment-body p.comment-pending {	
+					font-size:12px;				
+					padding:5px;
+					color:#f88585;
+					font-style:italic;
+				}
+			
+		/* NO COMMENTS FOR THIS CONTENT */
+		.nocomment-item {
+			border-bottom:solid 1px #e7e7e7;
+			padding:10px 10px 10px 45px;
+			background-image:url(../images/bg-comment-quotes.gif);
+			background-position:7px 8px;
+			background-repeat:no-repeat;
+			position:relative;					
+		}
+			.nocomment-item p.nocomment-body  {	
+				font-size:12px;				
+				color:#666666;
+				line-height:18px;
+				margin-bottom:8px;
+				padding-left:10px;
+			}
+		
+		/* ADD COMMENT / REVIEW */
+		.content-leavecomment {
+			/*background-color:#f4f4f4;*/
+			padding:15px 0px 5px 0px;
+			margin-top:25px;
+		}	
+			.content-leavecomment h4.leavecomment-title {
+				margin:0px 0px 5px 0px;
+				padding-bottom:10px;
+				border-bottom:solid 1px #e7e7e7;
+				font-size:16px;
+				font-weight:400;
+				color:#666666;
+			}	
+			.content-leavecomment .leavecomment-info {
+				padding:5px 0px 5px 0px;
+				border-bottom:solid 1px #e7e7e7;
+				position: relative;
+			}					
+				.content-leavecomment .leavecomment-info label {
+					width:75px;
+					text-align:right;
+					margin-right:15px;
+					font-size:12px;
+					color:#666666;
+					display:block;
+					float:left;
+					position:relative;
+					top:3px;
+				}
+			.content-leavecomment p.leavecomment-submit {
+				padding:5px 3px 5px 0px;
+				text-align:right;
+				margin-bottom:10px;
+			}
+			.content-leavecomment span.leavecomment-notice {
+				font-size:11px;
+				color:#999999;
+				/*margin-left:5px;*/
+				position: absolute;
+				left: 320px;
+				top: 10px;
+			}
+			.content-leavecomment input.field-medium {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#666666;
+				padding:3px;
+				width: 200px;	
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:12px;
+			}
+			.content-leavecomment textarea {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#666666;
+				padding:3px;
+				width:80%;
+				height:85px;
+				font-size:12px;
+				font-family:Arial, Helvetica, sans-serif;
+				line-height:18px;
+			}
+			.content-leavecomment input.submit {
+				padding:3px 5px 3px 5px;
+				font-size:14px;
+			}
+			.content-leavecomment .star-rating-container {
+				margin: 0px;
+				padding: 1px 5px;
+				background-color: #ffffff;
+				border: 1px solid #c3c3c3;
+				position: relative;
+				width: 95px;
+				height: 17px;
+				text-align: center;
+				overflow: auto;
+			}

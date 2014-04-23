@@ -1,0 +1,116 @@
+
+		#content {
+			width:960px;
+			margin:0px auto;
+			padding:0px;
+			/*overflow: hidden;*/
+		}
+
+			#content-header {
+				margin-bottom:10px;
+			}
+
+				#content-header p.header-section {
+					font-size:12px;
+					color:#999999;
+					margin:0px;
+				}
+
+				#content-header p.header-backtoall {
+					font-size:12px;
+					color:#999999;
+					margin:0px 0px 5px 0px;
+					padding-left:20px;
+					background-image: url(../images/icon-backtoall.gif);
+					background-position:middle left;
+					background-repeat:no-repeat;
+				}
+					p.header-backtoall a {
+						color:#999999;
+						text-decoration:none;
+					}
+						p.header-backtoall a:hover {
+							color:#999999;
+							text-decoration:none;
+							border-bottom:dotted 1px #999999
+						}
+
+				#content-header h2.header-title {
+					position:relative;
+					font-size:24px;
+					font-weight:400;
+					letter-spacing:-0.5px;
+					color:#333333;
+					margin-bottom:20px;
+					border-bottom:solid 1px #dddddd;
+					padding-bottom:4px;
+				}	
+					h2.header-title span {
+						position:absolute;
+						top:-3px;
+						right:1px;
+						font-size:0.6em;
+						cursor: pointer;
+					}
+					
+				#sitemap-container {
+					padding:10px 15px 15px 10px;
+					border:solid 1px #ececec;
+					background-color:#ffffff;				
+				}					
+
+					#content dt {
+						text-align: left;
+						color:#38627A;
+					}
+					
+					/** Sitemap Reorder Styles **/
+					#sitemap, #dragHelper {display: block; margin: 0; overflow:hidden}
+					#dragHelper { background: #eee; }
+					#sitemap ul, #dragHelper ul {font-size: 1em; list-style: none; padding-left: 15px;}
+					#sitemap li, #dragHelper li {display: block; width: 100%; display: block; list-style: none; clear: both; cursor: move; padding:0px 5px 5px 5px; }
+					
+					/** Sitemap Level 1 **/
+					#sitemap li dl, #dragHelper ul li div 
+						{position: relative; display: block; height: 19px; padding: 10px 0px 5px 15px; background:#f0f9ff; color:#38627A; background-image:url(../images/icon-sitemap-sidebar-page.gif); background-position:10px 8px; background-repeat:no-repeat;}
+						#sitemap li dl:hover, #dragHelper ul li div:hover {background-color:#c8e5f7;}
+					
+						/** Sitemap Level 2 **/
+						#sitemap li ul li dl, #dragHelper ul li ul li div 
+							{position: relative; display: block; height: 19px; padding: 10px 0px 5px 15px; background:#E6F6DB; color:#38627A; background-image:url(../images/icon-sitemap-sidebar-page.gif); background-position:10px 8px; background-repeat:no-repeat;}
+							#sitemap li ul li dl:hover, #dragHelper ul li ul li div:hover {background-color:#C5E6AC;}
+							
+							/** Sitemap Level 3 **/
+							#sitemap li ul li ul li dl, #dragHelper ul li ul li ul li div 
+								{position: relative; display: block; height: 19px; padding: 10px 0px 5px 15px; background:#FBF8CA; color:#38627A; background-image:url(../images/icon-sitemap-sidebar-page.gif); background-position:10px 8px; background-repeat:no-repeat;}
+								#sitemap li ul li ul li dl:hover, #dragHelper ul li ul li ul li div:hover {background-color:#F9F4A7;}
+					
+					#sitemap dt, #dragHelper dt {float: left; font-weight: 400; font-size: 1.1em; line-height: 1em; margin-left: 16px; padding: 0 0 0 1px;}
+					#sitemap dd, #dragHelper dd {float: left;}
+					#sitemap .sm2_actions, #dragHelper .sm2_actions {display: none; padding: 3px 2px 0 5px;}
+					#sitemap .sm2_status, #dragHelper .sm2_status {position: absolute; top: 3px; right: 0;}
+					
+					#sitemap dl:hover dd, #sitemap dd:hover {display: block;}
+					#sitemap dd strong, #dragHelper dd strong {display: none;}
+					#sitemap a, #dragHelper a {border: none;}
+					
+					#sitemap .sm2_liOpen, #dragHelper .sm2_liOpen {background: url(images/sm2_li.gif) left repeat-y;}
+					
+					#sitemap dl.sm2_over {background-color: #9ac4dd;}
+					#sitemap .dropzone.sm2_over {border-color: #9ac4dd; margin-bottom:10px;}
+					
+					#sortHelper {height: 1px !important; background: #000; margin: 0 !important; padding: 0; position: relative; z-index: 100;}
+					#sortHelper + li {margin-top: 0;}
+					
+					#dropMenu {background: #333; color:#eee; position:absolute; display:none; z-index:1000;}
+					#dropMenu ul {list-style:none; margin:0; padding:0; text-indent:0;}
+					#dropMenu li {margin:0; padding:5px 10px; width:100px; cursor:pointer; font-weight:bold;}
+					
+					#sitemap .dropzone { height:6px; background-color:transparent; border-bottom:4px solid transparent; }
+					
+					.ui-draggable-dragging { cursor: move; max-width: 800px; }
+			
+				#sitemap-instructions {
+					margin:15px;
+					color:#888888;				
+				}	

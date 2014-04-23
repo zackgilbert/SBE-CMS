@@ -1,0 +1,35 @@
+/* ------------------------------------------------
+
+   Flint Reset Stylesheet
+   (loaded site-wide)
+		
+   * This stylesheet is loaded across the
+   	 entire site for the purpose of normalizing 
+     styles across all browsers.
+   
+   * It also creates a neutral starting point
+     for future stylesheet development.
+
+--------------------------------------------------- */
+
+	html, body, form, fieldset, dl, dt, dd, blockquote { margin: 0px; padding: 0px; }
+	
+	/* 
+	This allows em unit sizes to match up with px unit sizes for the 'font-size' property.
+	(i.e., 1.2em = 12px)
+	*/
+	body { font-size: 62.5%; }
+	
+	ul, ol, li { margin: 0px; padding: 0px; list-style: none; }
+	
+	h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; }
+	
+	p, pre, address { margin: 0px; padding: 0px; }
+	
+	label {	cursor: pointer; }
+	
+	fieldset { margin: 0px; padding: 0px; border: none; }
+	
+	a img {	border: none; }
+	
+	input, select, textarea { font-size: 1.0em; }

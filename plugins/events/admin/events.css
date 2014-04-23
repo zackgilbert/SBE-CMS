@@ -1,0 +1,411 @@
+@import url(../stylesheets/autosuggest.css);
+@import url(../stylesheets/jquery.datepicker.css);
+
+/* ------------------------------------------------
+
+   SEEN Site Manager > 'Event Plugin' Stylesheet
+   (loaded by 'events*.php' pages in the Admin)
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=EVENTS LINKS
+   ------------------------------------------------ */
+
+   	a.cancel {
+		font-size:1.0em;
+		color:#e50d0d;
+		text-decoration:underline;
+	}
+		a.cancel:hover {
+			font-size:1.0em;
+			color:#FFFFFF;
+			text-decoration:none;
+			background-color:#e50d0d;
+		}
+
+/* ------------------------------------------------
+	=EVENTS FORMS
+   ------------------------------------------------ */
+	
+	select.status {
+		color:#333333;
+		font-size:14px;
+		padding-left:2px;
+		width:225px;
+		border-top:solid 1px #7c7c7c;
+		border-left:solid 1px #c3c3c3;
+		border-right:solid 1px #c3c3c3;
+		border-bottom:solid 1px #dddddd;
+		padding-left:2px;
+	}
+
+/* ------------------------------------------------
+	=EVENTS CONTENT HEADER
+   ------------------------------------------------ */
+	
+	#events-header {
+		position:relative;
+		overflow:hidden;
+	}	
+		h2.events-title {
+			font-size:16px;
+			font-weight:400;
+			margin:0px;
+			color:#333333;
+			padding:0px 0px 10px 0px;
+		}		
+		p.events-actions {
+			position:absolute;
+			top:0px;
+			right:2px;
+		}
+		
+/* ------------------------------------------------
+	=EVENTS RESULTVIEW
+   ------------------------------------------------ */
+
+	.events-resultview {
+		padding:10px 0px 10px 5px;
+		border-bottom:solid 1px #ececec;
+		border-top:solid 1px #ececec;
+		margin-top:-1px;
+		overflow:hidden;
+		position:relative;
+	}
+		.event-resultview-cal {
+			width:52px;
+			height:53px;
+			float:left;
+			margin-right:15px;
+			margin-bottom:10px;
+			text-align:center;
+			background-image:url(../images/bg-event-upcoming-cal.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding-top:4px;
+		}
+		.event-resultview-cal .today {
+			background-image:url(../images/bg-event-upcoming-cal-today.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			p.resultview-cal-month {
+				font-size:12px;
+				color:#c8292a;
+				text-transform:uppercase;
+				margin-left:-2px;
+			}
+			p.resultview-cal-day {
+				font-size:26px;
+				color:#333333;
+				margin-left:-2px;
+			}
+		h3.resultview-info-name {
+			width:435px;
+			font-size:14px;
+			color:#333333;
+			font-weight:400;
+			margin-top:5px;
+			margin-bottom:4px;				
+		}
+			h3.resultview-info-name a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;					
+			}
+				h3.resultview-info-name a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;					
+				}
+	
+		h4.resultview-info-venue {
+			width:435px;
+			font-size:12px;
+			color:#666666;
+			font-weight:400;
+			margin-top:5px;
+			margin-bottom:4px;				
+		}
+			h4.resultview-info-venue a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;					
+			}
+				h4.resultview-info-venue a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;					
+				}
+		p.resultview-info-date {
+			font-size:12px;
+			color:#999999;
+			line-height:16px;				
+		}
+			p.resultview-info-date a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				p.resultview-info-date a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		p.resultview-info-type {
+			font-size:11px;
+			color:#666666;
+			line-height:16px;	
+			margin-top:5px;		
+			padding-left:67px;	
+		}
+			p.resultview-info-type a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				p.resultview-info-type a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+
+			
+/* ------------------------------------------------
+	=EVENTS EDIT
+   ------------------------------------------------ */			
+	#edit-header {
+		position:relative;
+		overflow:hidden;
+	}	
+			
+		p.section-path {
+			font-size:12px;
+			color:#999999;
+			margin:0px 0px 5px 0px;
+			background-image:url(../../../admin/images/icon-backtoall.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding-left:20px;
+		}
+			p.section-path a {
+				color:#999999;
+				text-decoration:none;
+			}
+				p.section-path a:hover {
+					color:#666666;
+					text-decoration:none;
+				}
+		
+		h2.edit-title {
+			font-size:20px;
+			font-weight:400;
+			color:#1b1b1b;
+			margin:0px 0px 15px 0px;
+			padding-bottom:5px;
+			border-bottom:solid 1px #dddddd;
+			position:relative;
+		}
+		
+		.edit-delete {
+			position:absolute;
+			top:22px;
+			right:2px;	
+		}
+	
+		.edit-item {
+			padding:0px 0px 10px 0px;
+			border-bottom:solid 1px #dddddd;
+			margin-bottom:15px;
+			position:relative;
+			font-size:12px;
+			color:#666666;
+		}
+
+			.edit-item .author-container {
+				margin-bottom:10px;
+			}
+				.author-container .deleteAuthor {
+					margin-left:7px;
+					margin-top:2px;
+					position:absolute;
+				}
+			.edit-item #authors-loading {
+				padding:5px 0px 5px 0px;
+			}	
+			.edit-item label {
+				font-size:12px;
+				display:block;
+				margin-bottom:3px;
+				color:#666666;
+				width:225px;
+			}
+			.edit-item label.auto-generate {
+				font-size:12px;
+				margin-left:5px;
+				color:#666666;
+				position:absolute;
+				top:-4px;
+				left:80px;
+			}
+			.edit-item p.edit-item-description {
+				font-size:12px;
+				margin-bottom:5px;
+				color:#999999;
+			}
+			.edit-item input.find {
+				font-size:12px;
+				padding:1px 4px;
+			}
+		
+		.collapsable {
+			border:solid 1px #CFE3EF;	
+		}
+			
+		.edit-save {
+			margin:30px 0px 10px 0px;	
+			background-color:#FFFDEB;
+			padding:10px;
+			font-size:12px;
+			color:#333333;
+			border-top:solid 2px #FCECC3;
+		}
+		
+	.event-edit {
+		margin-bottom:15px;
+	}
+		.event-edit .event-edit-item {
+			padding:10px 0px 10px 2px;
+			border-bottom:solid 1px #ececec;
+			margin-top:-1px;
+			overflow:hidden;
+			position:relative;
+			font-size:12px;
+			color:#999999;
+		}
+			.event-edit-item .item-eventtime {
+				float:left;
+				color:#666666;
+				width:460px;
+			}
+				.item-eventtime .eventtime-row {
+					margin-top:6px;
+					margin-bottom:6px;
+					display: block;
+				}
+			.event-edit-item p.item-description {
+				margin-left:10px;
+				color:#999999;
+				font-size:11px;
+				position:absolute;
+				top:14px;
+				right:110px;
+				width:155px;
+			}
+
+			.event-edit-item a.location-choose {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #999999;
+			}
+				.event-edit-item a.location-choose:hover {
+					color:#146AA1;
+					text-decoration:none;
+					border-bottom:dotted 1px #146AA1;
+				}
+
+			.event-edit-item label {
+				float:left;
+				display:block;
+				margin:2px 15px 0px 0px;
+				width:90px;
+				color:#666666;
+			}
+			.event-edit-item input.field-medium {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#333333;
+				padding:3px;
+				width: 300px;	
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:12px;
+			}
+			.event-edit-item input.field-date {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#333333;
+				padding:3px;
+				width: 85px;	
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:12px;
+			}
+			.event-edit-item textarea {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#333333;
+				padding:3px;
+				width:300px;
+				height:65px;
+				font-size:12px;
+				font-family:Arial, Helvetica, sans-serif;
+				line-height:18px;
+			}
+			.event-edit-item select {
+				background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+				border: 1px solid #c3c3c3; 
+				border-top-color: #7c7c7c; 
+				border-bottom-color: #dddddd;
+				color:#333333;
+				font-size:12px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			.event-edit-item select.venues {
+				width:309px;
+			}
+			
+			.event-venue-container {
+				display: block;
+				clear: both;
+				margin-bottom: 5px;
+			}
+			
+
+		.event-edit-item-submit {
+			margin:30px 0px 10px 0px;	
+			background-color:#FFFDEB;
+			padding:10px;
+			font-size:12px;
+			color:#333333;
+			border-top:solid 2px #FCECC3;
+		}
+			.event-edit-item-submit input.submit {
+				padding:3px 5px 3px 5px;
+				font-size:14px;
+				margin-right:5px;
+			}
+
+		a.cancel-changes {
+			color:#c8292a;
+			text-decoration:none;
+			border-bottom:dotted 1px #c8292a;
+		}
+			a.cancel-changes:hover {
+				color:#e05e5f;
+				text-decoration:none;
+				border-bottom:dotted 1px #c8292a;
+			}
+
+		.event-edit input.required,
+		.event-edit select.required,
+		.event-edit textarea.required {
+			border: 1px solid #fff0f0;
+			background-color: #ffa4a4;
+		}
+		

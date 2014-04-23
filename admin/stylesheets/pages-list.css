@@ -1,0 +1,189 @@
+	
+	#content {
+		width:960px;
+		margin:0px auto;
+		padding:0px;
+		overflow:hidden;
+	}
+	
+		#content-header {
+			margin-bottom:10px;
+		}
+		
+			#content-header p.header-section {
+				font-size:12px;
+				color:#999999;
+				margin:0px;
+			}
+			
+			#content-header p.header-backtoall {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+				padding-left:20px;
+				background-image: url(../images/icon-backtoall.gif);
+				background-position:middle left;
+				background-repeat:no-repeat;
+			}
+				p.header-backtoall a {
+					color:#999999;
+					text-decoration:none;
+				}
+					p.header-backtoall a:hover {
+						color:#999999;
+						text-decoration:none;
+						border-bottom:dotted 1px #999999
+					}
+		
+			#content-header h2.header-title {
+				position:relative;
+				font-size:24px;
+				font-weight:400;
+				letter-spacing:-0.5px;
+				color:#333333;
+				margin-bottom:20px;
+				border-bottom:solid 1px #dddddd;
+				padding-bottom:4px;
+			}	
+				h2.header-title span {
+					position:absolute;
+					top:-3px;
+					right:1px;
+					font-size:0.6em;
+					cursor: pointer;
+				}
+	
+	
+	#content ul.sitemap {
+		padding:0px;
+		border:solid 1px #ececec;
+		list-style-position:inside;
+		/*background-image:url(../images/bg-pages-zebra.gif);
+		background-position:top left;
+		background-repeat:repeat;*/
+		background-color:#FFFFFF;
+		padding:15px 15px 15px 15px;
+	}
+	/*#content ul {
+		background-image:url(../images/icon-sitemap-ul.gif);
+		background-position:20px 10px;
+		background-repeat:repeat-y;
+	}*/
+		#content ul.sitemap li {
+			padding: 10px 10px 0px 50px;
+			background-image:url(../images/icon-sitemap.gif);
+			background-position:15px 13px;
+			background-repeat:no-repeat;
+			position:relative;
+			list-style-position:inside;
+		}		
+		#content ul.sitemap li:last-child {
+			background-image:url(../images/icon-sitemap-last.gif);
+			background-position:15px 13px;
+			background-repeat:no-repeat;
+		}
+		#content ul.sitemap li:first-child {
+			background-image:url(../images/icon-sitemap-home.gif);
+			background-position:15px 13px;
+			background-repeat:no-repeat;
+		}	
+		#content ul.sitemap li.row-even {
+			background-color:#FFFFFF;
+		}
+		#content ul.sitemap li.row-odd {
+			background-color:#f9f9f9;
+		}
+		#content ul.sitemap li.selected {
+			background-color:#e6f1f8;
+		}
+		
+		#content ul.sitemap li .select-container {
+			cursor:pointer;
+			padding: 10px 10px 15px 50px;
+			margin: -10px -10px 0px -50px;
+		}
+		
+		#content .sitemap li.move .select-container {
+			/*cursor: move;*/
+			cursor: row-resize;
+		}
+		
+		#content ul.sitemap li h3.section-name {
+			font-size:16px;
+			font-weight:400;
+			margin:0px 0px 3px 0px;
+			color:#333333;
+		}
+		#content ul.sitemap li dt {
+			width:40px;
+			float:left;
+			clear:both;
+			padding:0px;
+			margin:1px 0px 0px 0px;
+			text-align:left;
+			color:#888888;
+		}
+			#content ul.sitemap li dd {
+				font-size:12px;
+				color:#888888;
+				line-height:16px;
+				margin:0px;
+				padding:0px;
+			}
+			#content ul.sitemap li dd a {
+				color:#666666;
+				text-decoration:none;
+				background-image:url(../images/icon-viewlink.gif);
+				background-position:center right;
+				background-repeat:no-repeat;
+				padding-right:18px;
+			}
+				#content ul.sitemap li dd a:hover {
+					color:#6595B2;
+					text-decoration:none;
+				}
+				
+		#content ul.sitemap li p.section-file {
+			font-size:12px;
+			margin:0px;
+			color:#888888;
+		}		
+		
+		#content ul.sitemap li .section-utilities {
+			display: none;
+			position: absolute;
+			top: 28px;
+			right: 10px;
+		}
+			
+			#content ul.sitemap li.selected .section-utilities {
+				display: block;
+			}
+				#content ul.sitemap li.selected ul li .section-utilities {
+					display: none;
+				}
+			
+			
+			#content ul.sitemap li ul.sitemap-subsection {
+				margin: 0px -10px 0px -30px;
+				list-style-position:inside;
+			}	
+				#content ul.sitemap li ul.sitemap-subsection li {
+					padding: 10px 10px 0px 70px;
+					background-image: url(../images/icon-sitemap.gif);
+					background-position: 33px 13px;
+					background-repeat: no-repeat;
+					position: relative;
+					list-style-position:inside;
+				}
+				#content ul.sitemap li ul.sitemap-subsection li:first-child {
+					background-image: url(../images/icon-sitemap-first.gif);
+					background-position: 10px 13px;
+					background-repeat: no-repeat;
+				}		
+				#content ul.sitemap li ul.sitemap-subsection li:last-child {
+					background-image: url(../images/icon-sitemap-last.gif);
+					background-position: 33px 13px;
+					background-repeat: no-repeat;
+				}	
+	

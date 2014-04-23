@@ -1,0 +1,194 @@
+/* ------------------------------------------------
+
+   'SSM' Template > 'Index' Page Stylesheet
+   (loaded by Page: 'index.php')
+
+--------------------------------------------------- */
+		
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+
+	#content {
+		width:960px;
+		margin:0px auto;
+		padding:0px;
+		overflow:hidden;
+		padding:0px;
+	}
+	
+		#content-header {
+			margin-bottom:10px;
+		}
+		
+			#content-header p.header-section {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+			}
+			
+			#content-header p.header-backtoall {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+				padding-left:20px;
+				background-image: url(../images/icon-backtoall.gif);
+				background-position:middle left;
+				background-repeat:no-repeat;
+			}
+				p.header-backtoall a {
+					color:#999999;
+					text-decoration:none;
+				}
+					p.header-backtoall a:hover {
+						color:#999999;
+						text-decoration:none;
+						border-bottom:dotted 1px #999999
+					}
+		
+			#content-header h2.header-title {
+				position:relative;
+				font-size:24px;
+				font-weight:400;
+				letter-spacing:-0.5px;
+				color:#333333;
+				margin-bottom:20px;
+				border-bottom:solid 1px #dddddd;
+				padding-bottom:4px;
+			}	
+				h2.header-title span {
+					position:absolute;
+					top:-3px;
+					right:1px;
+					font-size:0.6em;
+					cursor: pointer;
+				}
+
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+	   
+		#content-2colL-left {
+			float:left;
+			width:710px;
+			margin:0px;
+			padding:15px;
+			background-color:#FFFFFF;
+			border:solid 1px #dddddd;
+			overflow:hidden;
+		}
+		
+			#content-2colL-left h3.dashboard-stats-title {
+				border-bottom:1px solid #DDDDDD;
+				color:#333333;
+				font-size:16px;
+				font-weight:400;
+				margin:0 0 15px;
+				padding-bottom:4px;
+				position:relative;
+			}	
+				h3.dashboard-stats-title .stats-viewmore {
+					position:absolute;
+					top:5px;
+					right:2px;
+					font-size:12px;
+				}	
+					.stats-viewmore a {
+						color:#38627A;
+						text-decoration:none;
+					}
+						.stats-viewmore a:hover {
+							color:#6595B2;
+							text-decoration:none;
+						}
+			
+			#content-2colL-left .welcome-item {
+				float:left;
+				width:350px;
+				margin:20px 0px 0px 0px;
+			}
+				.welcome-item p.welcome-text {
+					font-size:12px;
+					color:#999999;
+					margin-bottom:2px;
+				}
+				.welcome-item h3.welcome-item-name {
+					font-size:20px;
+					font-weight:400;
+					color:#333333;
+					margin-bottom:10px;
+				}
+				.welcome-item p {
+					font-size:12px;
+					color:#666666;
+					margin:0px;
+					line-height:18px;
+				}
+					.welcome-item p a {
+						color:#38627A;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;
+					}
+						.welcome-item p a:hover {
+							color:#6595B2;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+			
+			#content-2colL-left .dashboard-item {
+				float:left;
+				width:335px;
+				margin:20px 0px 25px 25px;
+			}
+				.dashboard-item h3.dashboard-item-title {
+					border-bottom:1px solid #DDDDDD;
+					color:#333333;
+					font-size:14px;
+					font-weight:400;
+					margin:0 0 15px;
+					padding-bottom:4px;
+					position:relative;
+				}	
+				.dashboard-item ul.recently-edited {
+					margin:0px 0px 0px 10px;
+					padding:0px;
+					list-style-position:inside;
+				}
+					.dashboard-item ul.recently-edited li {
+						color:#666666;
+						font-size:11px;
+						background-image:url(../images/icon-sitemap-sidebar-page.gif);
+						background-position:0px 4px;
+						background-repeat:no-repeat;
+						padding:2px 0px 7px 25px;
+						line-height:18px;
+					}
+						.dashboard-item ul.recently-edited li a {
+							color:#38627A;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+							font-size:14px;
+						}
+							.dashboard-item ul.recently-edited li a:hover {
+								color:#6595B2;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}	
+							
+					.dashboard-item ul.recently-edited li.edited-none {
+						text-align:center;										
+					}				
+								
+	/* -----------------------
+		=CONTENT RIGHT COLUMN
+	   ----------------------- */
+	
+		#content-2colL-right {
+			float:left;
+			width:188px;
+			margin:0px;
+			border-top:solid 1px #CFE3EF;
+			background-color:#ECF3F7;
+			padding:15px;
+		}	
+				

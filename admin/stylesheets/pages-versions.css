@@ -1,0 +1,72 @@
+
+	body {
+		padding-top:42px;
+		background-position:0px 42px;
+	}
+	
+		#editable-rollback-container {
+			position: absolute;
+			position: fixed;
+			top: 0px; 
+			right: 0px; 
+			background-color:#1b1b1b;
+			padding: 10px 0px;
+			height:21px;
+			width:100%;
+			font-family:Arial, Helvetica, sans-serif;
+			border-bottom:solid 1px #333333;
+		}
+		
+			#editable-rollback-tools {
+				width:960px;
+				margin:0px auto;
+				position:relative;
+				text-align:center;
+			}
+			
+			#editable-rollback-tools p.return-to-edit {
+				margin:0px;
+				position:absolute;
+				top:0px;
+				left:0px;
+				padding:1px 0px 2px 25px;
+				font-size:12px;
+				background-image:url(../images/icon-return-to-edit.gif);
+				background-position:0px 0px;
+				background-repeat:no-repeat;
+			}
+				p.return-to-edit a {
+					color:#cccccc;
+					text-decoration:none;
+				}
+					p.return-to-edit a:hover {
+						color:#ffffff;
+						text-decoration:none;
+					}
+				
+			#editable-rollback-tools p.revert-to {
+				margin:0px auto;
+				display:inline;
+			}
+				#editable-rollback-tools p.revert-to img.btn-revert {
+					display:inline;
+					border:none;
+				}
+				
+			#editable-rollback-tools p.choose-version {
+				margin:0px;
+				position:absolute;
+				top:0px;
+				right:0px;
+				font-size:12px;
+				color:#cccccc;
+			}
+				p.choose-version select {
+					border-color:#7C7C7C #C3C3C3 #DDDDDD;
+					border-style:solid;
+					border-width:1px;
+					color:#333333;
+					font-size:13px;
+					margin:0px 0px 7px 5px;
+					padding-left:2px;
+				}

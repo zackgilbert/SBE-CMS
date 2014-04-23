@@ -1,0 +1,188 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Band Fullview' Page Stylesheet
+   (loaded by Page: 'band-fullview.php')
+   
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	/* -----------------------
+		=CONTENT CONTAINER
+	   ----------------------- */
+		
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+			
+		#content-subnav {
+			width:20%;
+			overflow:hidden;
+			padding:10px 0px 25px 0px;
+			float:left;
+			margin-right:20px;
+			border-right:solid 1px #F1EFD8;
+		}
+			h2.bands-title {
+				font-size:1.2em;
+				font-weight:400;
+				color:#999999;
+				text-transform:uppercase;
+				margin:0px 0px 20px 5px;
+			}
+			
+			ul.bands {
+				list-style-position:outside;
+				list-style-type:none;
+				margin:0px;
+				padding:0px;
+			}
+				ul.bands li {
+					padding:5px 5px;
+					border-bottom:solid 1px #F1EFD8;
+					border-top:solid 1px #F1EFD8;
+					margin-top:-1px;
+				}
+					ul.bands li a {
+						color:#666666;
+						text-decoration:none;
+					}
+						ul.bands li a:hover {
+							color:#333333;
+							text-decoration:none;
+						}
+				
+				ul.bands li.selected {
+					padding:5px 5px;
+					border-bottom:solid 1px #F1EFD8;
+					border-top:solid 1px #F1EFD8;
+					margin-top:-1px;
+					background-color:#F1EFD8;
+				}
+					ul.bands li.selected a {
+						color:#333333;
+						text-decoration:none;
+					}
+						ul.bands li.selected a:hover {
+							color:#333333;
+							text-decoration:none;
+						}
+		
+		#content-band {
+			width:75%;
+			float:left;			
+		}
+		
+			img.band-logo {
+				margin:0px;
+				float:right;
+			}
+			h1.band-name {
+				display:block;
+				margin:5px 0px 10px 0px;
+				font-size:2.0em;
+				font-weight:400;
+				color:#E8631B;
+			}
+			p.band-bio {
+				font-size:1.0em;
+				color:#666666;
+				line-height:1.6em;
+				margin:0px 15px 25px 0px;
+			}
+			
+			.band-audio {
+				border:solid 1px #F1EFD8;
+				background-color:#fffeee;
+				padding:10px 15px 15px 15px;
+				margin:10px 0px 30px 0px;
+			}
+				.band-audio h3.audio-title {
+					font-size:1.0em;
+					font-weight:400;
+					color:#999999;
+					text-transform:uppercase;
+					margin:0px 0px 10px 0px;
+				}
+				ol.tracks {
+					margin:0px 0px 0px 0px;
+					padding:0px;
+				}
+					ol.tracks li {
+						position:relative;
+						list-style-type:decimal;
+						list-style-position:inside;
+						padding:10px 5px;
+						margin-top:-1px;
+						font-size:1.2em;
+						color:#666666;
+						border-top:solid 1px #F1EFD8;
+						border-bottom:solid 1px #F1EFD8;
+					}
+						ol.tracks li p.audio-track-description {
+							display:inline;
+					
+						}
+						ol.tracks li .audio-track {
+							position: absolute;
+							top:6px;
+							right:5px;
+					
+						}
+			
+			.band-photo-column {
+				float:left;
+				width:45.5%;
+				margin-right:20px;
+			}
+				.band-photo-column img {
+					border:solid 1px #cccccc;
+					margin-bottom:5px;
+				}
+				h4.photo-title {
+					font-size:1.0em;
+					font-weight:400;
+					color:#666666;
+					margin:0px;
+				}
+				p.photo-description {
+					font-size:1.0em;
+					color:#999999;
+					margin:0px 0px 0px 0px;
+				}
+				
+			.band-video-column {
+				float:left;
+				width:50%;
+			}
+				h4.video-title {
+					font-size:1.0em;
+					font-weight:400;
+					color:#666666;
+					margin:5px 0px 0px 0px;
+				}
+				p.video-description {
+					font-size:1.0em;
+					color:#999999;
+					margin:0px 0px 0px 0px;
+				}
+				.video-item {
+					margin-bottom:20px;
+				}
+					.video-item-embed {
+						clear:both;
+						margin-top:10px;
+					}
+				
+			h3.content-type-title {
+				font-size:1.0em;
+				font-weight:400;
+				text-transform:uppercase;
+				color:#999999;
+				border-bottom:solid 1px #F1EFD8;
+				padding-bottom:3px;
+				margin-bottom:10px;
+			}
+	

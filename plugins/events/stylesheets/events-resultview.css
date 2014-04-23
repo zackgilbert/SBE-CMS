@@ -1,0 +1,135 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Event Resultview' Stylesheet
+   
+   * This stylesheet is loaded by any page that calls 
+     the include 'event-resultview.php'     
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	.event-resultview {
+		padding:10px 0px 10px 5px;
+		border-bottom:solid 1px #ececec;
+		border-top:solid 1px #ececec;
+		margin-top:-1px;
+		overflow:hidden;
+		position:relative;
+	}
+		.event-resultview-cal {
+			width:52px;
+			height:53px;
+			float:left;
+			margin-right:15px;
+			margin-bottom:10px;
+			text-align:center;
+			background-image:url(../images/bg-event-upcoming-cal.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding-top:4px;
+		}
+		.event-resultview-cal .today {
+			background-image:url(../images/bg-event-upcoming-cal-today.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			p.resultview-cal-month {
+				font-size:12px;
+				color:#c8292a;
+				text-transform:uppercase;
+				margin:0px 0px 0px -2px;
+				padding:0px;
+			}
+			p.resultview-cal-day {
+				font-size:26px;
+				color:#333333;
+				margin:0px 0px 0px -2px;
+				padding:0px;
+			}
+		h4.resultview-info-name {
+			width:435px;
+			font-size:14px;
+			color:#333333;
+			font-weight:400;
+			margin-top:5px;
+			margin-bottom:4px;				
+		}
+			h4.resultview-info-name a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;					
+			}
+				h4.resultview-info-name a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;					
+				}
+		h5.resultview-info-venue {
+			width:435px;
+			font-size:12px;
+			color:#666666;
+			font-weight:400;
+			margin-top:5px;
+			margin-bottom:4px;
+		}
+			h5.resultview-info-venue a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;					
+			}
+				h5.resultview-info-venue a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;					
+				}
+		p.resultview-info-date {
+			font-size:12px;
+			color:#999999;
+			line-height:16px;	
+			padding-left:67px;			
+		}
+			p.resultview-info-date a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				p.resultview-info-date a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		p.resultview-info-type {
+			font-size:11px;
+			color:#666666;
+			line-height:16px;	
+			margin-top:5px;		
+			padding-left:67px;	
+		}
+			p.resultview-info-type a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				p.resultview-info-type a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		
+		.event-resultview-attending {
+			float:right;
+			text-align:right;
+			margin-top:8px;
+		}
+			p.resultview-attending-people {
+				color:#999999;
+				margin-top:5px;
+			}
+						
+		.resultview-tools {
+			margin-left:10px;
+		}
+	

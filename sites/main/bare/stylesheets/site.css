@@ -1,0 +1,24 @@
+body {
+	padding:25px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+	#container {
+		width: 850px;
+		margin: auto;
+		background-color: #ffffff;
+	}
+	
+		#header {
+			width: 850px;
+		}
+			
+				
+		#content {
+			clear: both;
+			min-height:500px;
+			font-size:1.2em;
+			overflow:hidden;
+			padding:45px 20px 25px 43px;
+			color:#4f4f4f;
+		}

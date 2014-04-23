@@ -1,0 +1,9 @@
+.DS_Store
+cache/*
+cache/**/*
+config/apikeys.php
+config/metadata.php
+docs/*
+uploads/**/*
+logs/**/*
+admin/javascripts/tiny_mce/*

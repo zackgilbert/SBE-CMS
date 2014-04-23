@@ -1,0 +1,60 @@
+Options +FollowSymLinks
+
+# Far Future Expires Header # plus 1 week
+<FilesMatch "\.(gif|png|jpg|jpeg|js|css|swf)$">
+    FileETag none
+    ExpiresActive On
+    #ExpiresDefault "access plus 10 years"
+	ExpiresDefault A604800
+	Header append Cache-Control "public"
+</FilesMatch>
+
+RewriteEngine on
+
+# Let anything openx or install related act normal
+RewriteRule ^(openx|install)/(.*)$ $1/$2 [L,QSA]
+#RewriteRule ^(__install__)/(.*)$ index.php?flinturl=404 [L,QSA]
+
+# Remove version numbers from filenames
+RewriteRule ^(.*)/(.+)\.([0-9]{10,})\.(js|css|gif|jpg|png)$ $1/$2.$4 [L,QSA]
+RewriteRule ^(.*)(uploads)/(.+)(\.[0-9]{10,})\.(.+)$ $1$2/$3.$5 [L,QSA]
+
+# fix issue with ampersands
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\&(.*)$ $1\%26$2
+
+# Find actual server path of files -- **** TEMP -- NOT A GOOD SOLUTION ****
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)(uploads)/(.+)$ uploads/$3 [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(admin)/(.*)(images)/(.+)$ $1/$3/$4 [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/(.+)/(images)/(.+)$ sites/$1/$2/$3/$4 [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/(images)/(.+)$ sites/$1/default/$2/$3 [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)(images)/(.+)$ sites/main/default/$2/$3 [QSA]
+
+# Send file path to loader if exact file wasn't found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)(uploads)/(.+)$ loader.php?file=$2/$3 [L,QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)(javascripts|stylesheets|images|files)/(.+)\.([a-zA-Z]{2,4})$ loader.php?file=$1$2/$3.$4&type=$2 [L,QSA]
+
+# Loader needed for non-debugging of page's javascript and stylesheets
+RewriteRule ^(.*)(javascripts|stylesheets)/$ loader.php?flinturl=$1&type=$2 [L]
+
+# reverse ampersand fix
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\%26(.*)$ $1\&$2
+
+RewriteCond %{REQUEST_FILENAME} ^(.*)(/admin)/(^stylesheets/|^javascripts/|^images/|^files)(.*)$ [NC]
+RewriteRule ^(.*)$ index.php?flinturl=$1$2 [L,QSA]
+
+# Don't let users have access to restricted/private folders
+RewriteCond %{REQUEST_FILENAME} ^(.*)(/cache|/config|/library|/logs|/private)/(.*)$ [NC]
+RewriteRule ^(.*)$ index.php?flinturl=404 [L,QSA]
+
+# Load Flint's index file with whatever url was
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?flinturl=$1 [L,QSA]

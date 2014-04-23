@@ -1,0 +1,185 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Event Index' Pages Stylesheet
+   (loaded by Page: 'event-index.php')
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+   	/* -----------------------
+		=CONTENT
+	   ----------------------- */
+			
+		/* CURRENT SECTION NAME */
+		h2.section-title{
+			color:#0085D3;
+			font-size:2.6em;
+			letter-spacing:-.025em;
+			margin:0px 0px 20px 0px;
+			padding-top:30px;
+			font-weight:800;
+			background-image: url(../images/content-h1-bg.jpg);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+		
+		p.section-welcome {
+			float:left;
+			width:250px;
+			line-height:20px;
+			color:#666666;
+		}
+		
+		/* EVENTS CALENDAR HEADER */
+		#content-events-calendar {
+			/*border:solid 1px #ececec;
+			padding:15px;
+			overflow:hidden;
+			background-color:#fafafa;
+			float:right;*/
+			border:solid 1px #ececec;
+			background-color:#fafafa;
+			color:#999999;
+			font-size:12px;
+			padding:15px;
+			overflow:hidden;
+			margin:5px 0px 25px 0px;
+			
+			-webkit-border-radius:8px;
+			-moz-border-radius: 8px;
+			border-radius: 8px;	
+		}
+			#content-events-calendar .events-calendar-view {
+				float:left;
+				margin-right:20px;
+				position:relative;
+			}
+				.events-calendar-view h3.events-calendar-title {
+					font-size:12px;
+					font-weight:400;
+					text-transform:uppercase;
+					color:#C8292A;
+					padding-bottom:3px;	
+					margin-bottom:14px;			
+				}
+				#content-events-calendar table {
+					width:235px;
+					background-color:#FFFFFF;
+					border-left:1px solid #B9B9B9;
+					border-top:1px solid #a7a7a7;			
+				}
+			#content-events-calendar .events-todays-view {
+				float:left;
+				width:308px;
+			}
+				.events-todays-view h3.todays-events-title {
+					font-size:12px;
+					font-weight:400;
+					text-transform:uppercase;
+					color:#C8292A;
+					padding-bottom:3px;				
+				}
+				.events-todays-view .todays-events-item {
+					padding:10px 0px 10px 32px;
+					border-bottom:solid 1px #ececec;
+					margin-top:-1px;
+					overflow:hidden;
+					position:relative;
+					background-image:url(../images/icon-event-cal.gif);
+					background-position:5px 15px;
+					background-repeat:no-repeat;
+				}
+					.todays-events-item h4.item-info-name {
+						width:275px;
+						font-size:12px;
+						color:#333333;
+						font-weight:400;
+						margin-top:5px;
+						margin-bottom:4px;				
+					}
+						h4.item-info-name a {
+							color:#333333;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;					
+						}
+							h4.item-info-name a:hover {
+								color:#c8292a;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;					
+							}
+					.todays-events-item p.item-info-date {
+						font-size:12px;
+						color:#999999;
+						line-height:16px;				
+					}
+						p.item-info-date a {
+							color:#666666;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+							p.item-info-date a:hover {
+								color:#c8292a;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}
+					.todays-events-item  p.item-info-type {
+						font-size:11px;
+						color:#666666;
+						line-height:16px;	
+						margin-top:5px;			
+					}
+						p.item-info-type a {
+							color:#666666;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+							p.item-info-type a:hover {
+								color:#c8292a;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}
+		
+			.event-submitnew-button {
+				border:solid 1px #ececec;
+				border-top:none;
+				padding:10px 10px 5px 10px;
+				background-color:#FDFAE8;
+				margin-bottom:20px;
+				text-align:center;
+			}
+			
+			
+			/* RECENTLY POSTED EVENTS */
+			#content-upcoming-events {
+				padding:10px 0px 10px 0px;
+				overflow:hidden;
+				margin-bottom:15px;
+				margin:30px 0px;
+				clear:both;
+			}
+				h2.upcoming-events-title {
+					font-size:16px;
+					font-weight:400;
+					margin:2px 0px 15px 0px;
+					color:#c8292a;	
+					padding:0px;	
+				}
+					h2.upcoming-events-title .upcoming-events-browseall {
+						font-size:11px;
+						font-weight:400;
+						text-transform:none;
+						color:#666666;						
+					}
+						.upcoming-events-browseall a {
+							color:#666666;			
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						}
+							.upcoming-events-browseall a:hover {
+								color:#333333;			
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}

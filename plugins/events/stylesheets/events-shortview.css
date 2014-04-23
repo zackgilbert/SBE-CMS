@@ -1,0 +1,78 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Event Shortview' Stylesheet
+   
+   * This stylesheet is loaded by any page that calls 
+     the include 'event-shortview.php'     
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+
+	li.event-shortview {
+		border-bottom:solid 1px #ececec;
+		padding:7px 0px 7px 3px;
+		overflow:hidden;
+	}	
+		li.event-shortview .shortview-cal {
+			width:34px;
+			height:37px;
+			background-image:url(../images/bg-event-shortview.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			text-align:center;
+			float:left;
+			margin-right:12px;
+			padding-top:2px;
+		}
+		li.event-shortview .today {
+			background-image:url(../images/bg-event-shortview-today.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			.shortview-cal p.shortview-cal-month {
+				font-size:10px;
+				text-transform:uppercase;
+				color:#C8292A;
+				margin:0px 0px 0px -1px;
+			}
+			.shortview-cal p.shortview-cal-day {
+				font-size:20px;
+				color:#333333;
+				margin:-2px 0px 0px -1px;
+			}
+		
+		li.event-shortview h4.event-shortview-name {
+			color:#666666;
+			font-size:12px;
+			font-weight:400;
+			margin-bottom:3px;
+		}
+			li.event-shortview h4.event-shortview-name a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				li.event-shortview h4.event-shortview-name a:hover {
+					color:#333333;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+		li.event-shortview  p.event-shortview-date {
+			color:#999999;
+			font-size:11px;
+			margin-bottom:0px;
+			padding-left:46px;
+		}
+			li.event-shortview  p.event-shortview-date a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				li.event-shortview  p.event-shortview-date a:hover {
+					color:#333333;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}

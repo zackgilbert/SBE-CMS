@@ -1,0 +1,434 @@
+/* ------------------------------------------------
+
+   'SSM' Template > 'Settings' Page Stylesheet
+   (loaded by Page: 'settings.php')
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=FORMS
+   ------------------------------------------------ */
+   			
+	
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+	
+	#content {
+		width:960px;
+		margin:0px auto;
+		padding:0px;
+		overflow:hidden;
+	}
+	
+		#content-header {
+			margin-bottom:10px;
+		}
+		
+			#content-header p.header-section {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+			}
+			
+			#content-header p.header-backtoall {
+				font-size:12px;
+				color:#999999;
+				margin:0px 0px 5px 0px;
+				padding-left:20px;
+				background-image: url(../images/icon-backtoall.gif);
+				background-position:middle left;
+				background-repeat:no-repeat;
+			}
+				p.header-backtoall a {
+					color:#999999;
+					text-decoration:none;
+				}
+					p.header-backtoall a:hover {
+						color:#999999;
+						text-decoration:none;
+						border-bottom:dotted 1px #999999
+					}
+		
+			#content-header h2.header-title {
+				position:relative;
+				font-size:24px;
+				font-weight:400;
+				letter-spacing:-0.5px;
+				color:#333333;
+				margin-bottom:20px;
+				border-bottom:solid 1px #dddddd;
+				padding-bottom:4px;
+			}	
+				h2.header-title span {
+					position:absolute;
+					top:-3px;
+					right:1px;
+					font-size:0.6em;
+					cursor: pointer;
+				}	
+	
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+	   
+		#content-2colR-left {
+			float:left;
+			width:193px;
+			margin:0px 0px 0px 0px;
+			padding:5px 0px 0px 0px;
+		}
+			
+			#content-2colR-left #settings-sidebar {
+				margin-right:-1px;
+			}
+			
+				#settings-sidebar h3.settings-sidebar-title {
+					font-size: 12px;
+					font-weight: 400;
+					color:#6595b2;
+					margin-bottom:25px;
+					margin-top:20px;
+				}
+				#settings-sidebar ul.settings-items li {
+					background-color: transparent;
+					border-top:1px solid #dddddd;
+					border-bottom:1px solid #dddddd;
+					font-size:12px;
+					margin:-1px -1px 0px 0px;
+					padding:7px 0px 7px 0px;		
+				}
+					ul.settings-items li a {
+						color:#666666;
+						text-decoration:none;
+						padding:7px 0px 7px 10px;
+						margin: -7px 0px;
+						display: block;
+					}
+						ul.settings-items li a:hover {
+							color:#333333;
+							text-decoration:none;
+						}
+				#settings-sidebar ul.settings-items li:hover {
+					background-color:#f4f4f4;
+				}
+				#settings-sidebar ul.settings-items li.selected {
+					background-color:#BDD5E2;
+					border-top:1px solid #BDD5E2;
+					border-bottom:1px solid #BDD5E2;
+					border-right:1px solid #ffffff;
+					font-size:12px;
+					margin:-1px -1px 0px 0px;
+					padding:7px 0px 7px 0px;		
+				}
+					ul.settings-items li.selected a {
+						color:#333333;
+						text-decoration:none;
+					}
+						ul.settings-items li.selected a:hover {
+							color:#333333;
+							text-decoration:none;
+						}
+		
+			
+								
+	/* -----------------------
+		=CONTENT RIGHT COLUMN
+	   ----------------------- */
+	
+		#content-2colR-right {
+			float:left;
+			width:735px;
+			margin:0px;
+			border:solid 1px #dddddd;
+			background-color:#FFFFFF;
+			padding:15px;
+			min-height:500px;
+		}	
+			
+			
+		
+		.settings-header {
+			border-bottom:1px solid #DDDDDD;
+			margin-bottom:20px;
+			padding-bottom:10px;
+			position:relative;
+		}
+			.settings-header h2 {
+				font-size:2.4em;
+				font-weight:400;
+				letter-spacing:-0.025em;
+				color:#1B1B1B;
+				margin-bottom:2px;
+			}
+			.settings-header p {
+				font-size:12px;
+				color:#666666;
+				line-height:18px;
+				letter-spacing:normal;
+			}
+			
+		#content .setting-item {
+			position:relative;
+			margin-bottom:20px;
+		}
+			.setting-item h3.setting-item-title {
+				font-size:16px;
+				font-weight:400;
+				margin-bottom:25px;
+				color:#333333;
+				padding-bottom:8px;
+				border-bottom:solid 1px #dddddd;
+			}
+			.setting-item p.setting-item-description {
+				font-size:12px;
+				margin-bottom:25px;
+				color:#666666;
+				/*padding-bottom:8px;
+				border-bottom:solid 1px #dddddd;*/
+			}	
+			.setting-item .item-checkbox {
+				padding:0px 0px 10px 15px;
+				margin-bottom:15px;
+				position:relative;
+				font-size:12px;
+				color:#666666;
+				overflow:hidden;
+			}
+			.setting-item .item-edit {
+				padding:0px 0px 10px 15px;
+				border-bottom:solid 1px #dddddd;
+				margin-bottom:15px;
+				position:relative;
+				font-size:12px;
+				color:#666666;
+				overflow:hidden;
+			}
+				.item-edit img {			
+					float:left;
+					margin:0px 20px 10px 0px;
+					/*border:solid 1px #cccccc;*/
+				}
+				.item-edit label {			
+					color:#666666;
+					display:block;
+					float:left;
+					margin-top:4px;
+					width:90px;
+				}
+				.item-edit label.checkbox {			
+					float:none;
+					width:400px;
+				}
+				.item-edit select.default-template {			
+					color:#333333;
+					font-size:13px;
+					padding-left:2px;
+					width:250px;
+					border-top:solid 1px #7c7c7c;
+					border-left:solid 1px #c3c3c3;
+					border-right:solid 1px #c3c3c3;
+					border-bottom:solid 1px #dddddd;
+					padding-left:2px;
+				}
+				.item-edit input.field-medium {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					font-size:14px;
+					color:#333333;
+					padding:3px;
+					width: 300px;
+				}
+				.item-edit textarea {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					font-size:13px;
+					line-height:16px;
+					color:#333333;
+					padding:3px;
+					width: 70%;
+					height:150px;
+					font-family:"Courier New", Courier, monospace;
+				}
+				
+		#content h3.tool-item-title {
+			font-size:16px;
+			font-weight:400;
+			margin-bottom:25px;
+			color:#333333;
+			padding-bottom:8px;
+			border-bottom:solid 1px #dddddd;
+		}
+		
+		#content .tool-item {
+			position:relative;
+			margin-bottom:20px;
+			border:solid 1px #dddddd;
+		}
+
+#content .setting-save {
+	margin:30px 0px 10px 0px;	
+	background-color:#FFFDEB;
+	padding:10px;
+	font-size:12px;
+	color:#333333;
+	border-top:solid 2px #FCECC3;
+}
+
+										
+	/* --- Requirements --- */
+	.status-message {
+		text-align:center;
+		margin:15px auto 25px auto;
+		width:550px;
+	}
+	
+		.status-message p {
+			color:#999999;
+			margin:10px 0px 0px 0px;
+		}
+			.status-message p a {
+				color:#666666;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				.status-message p a:hover {
+					color:#333333;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+			
+		.status-message h2.success {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#40b940;
+			background-image:url(../images/icon-requirements-success.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:5px 0px 5px 40px;
+			width:420px;
+		}
+		
+		.status-message h2.warning {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#ffb432;
+			background-image:url(../images/icon-requirements-warning.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:5px 0px 5px 40px;
+			width:420px;
+		}
+		
+		.status-message h2.failure {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#f26565;
+			background-image:url(../images/icon-requirements-failure.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:3px 0px 5px 40px;
+			width:420px;
+		}
+		
+		h3.requirements-title {
+			margin:15px auto 15px auto;
+			width:550px;
+			padding:0px;
+			color:#999999;
+			/*margin:0px 0px 15px 0px;*/
+			font-weight:400;
+			font-size:12px;
+		}
+		
+		ul.requirements-list {
+			margin:15px auto 35px auto;
+			width:550px;
+			list-style-position:inside;
+			padding:0px;
+		}
+			
+			ul.requirements-list li {
+				list-style-type:none;
+				padding:12px 10px 14px 10px;
+				color:#666666;
+				border-bottom:solid 1px #dadada;
+				border-top:solid 1px #dadada;
+				margin:-1px 0px 0px 0px;
+				position:relative;
+				font-weight:800;
+			}
+			ul.requirements-list li.extensions {
+				padding:20px 0px 14px 10px;
+			}
+				ul.requirements-list li.extensions ul {
+					padding:0px;
+					margin:20px 30px 14px 40px;
+				}
+					ul.requirements-list li.extensions ul li {
+						padding:12px 10px 14px 10px;
+					}
+					ul.requirements-list li.extensions ul li.success {
+						padding:12px 10px 14px 10px;
+					}
+						ul.requirements-list li.extensions ul li.success .status {
+							color:#1f9216;
+						}	
+					
+			ul.requirements-list li .status {
+				position:absolute;
+				right:10px;
+				font-weight:400;
+			}
+			ul.requirements-list li.success {
+				background-color:#e8ffe6;
+			}
+				ul.requirements-list li.success .status {
+					color:#1f9216;
+				}
+			ul.requirements-list li.warning {
+				background-color:#fff3ca;
+			}
+				ul.requirements-list li.warning .status {
+					color:#ee792b;
+				}
+			ul.requirements-list li.fail {
+				background-color:#fff2f2;
+			}
+				ul.requirements-list li.fail .status {
+					color:#D75A5A;
+					font-weight:800;
+				}
+	
+	
+	/* --- Error Logs --- */
+	ul.errorlogs-list {
+		margin:0px 0px 20px 25px;
+		list-style-position:inside;
+	}
+		ul.errorlogs-list li {
+			padding:7px 0px 7px 30px;
+			list-style-type:none;
+			background-image:url(../images/icon-list-errorlogs.gif);
+			background-position:5px 5px;
+			background-repeat:no-repeat;
+			color:#999999;
+		}
+			ul.errorlogs-list li a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				ul.errorlogs-list li a:hover {
+					color:#666666;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+						

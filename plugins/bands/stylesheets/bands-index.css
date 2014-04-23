@@ -1,0 +1,44 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Band Index' Page Stylesheet
+   (loaded by Page: 'band-index.php')
+   
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+	/* -----------------------
+		=CONTENT CONTAINER
+	   ----------------------- */
+		
+	/* -----------------------
+		=CONTENT LEFT COLUMN
+	   ----------------------- */
+			
+		#content-column {
+			width:100%;
+			overflow:hidden;
+			padding-bottom:25px;
+		}
+		
+			.band-resultview {
+				width:46%;
+				float:left;
+				margin-right:30px;
+				border-bottom:dashed 1px #cccccc;
+				padding-bottom:20px;
+				padding-top:15px;
+			}
+				.band-logo {
+					display:block;
+					margin:0px 0px 15px 0px;
+				}
+				p.band-bio {
+					font-size:1.0em;
+					color:#666666;
+					line-height:1.6em;
+					margin:-15px 15px 15px 0px;
+				}
+	

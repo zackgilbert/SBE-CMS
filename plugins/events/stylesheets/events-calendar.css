@@ -1,0 +1,88 @@
+/* ------------------------------------------------
+
+   'Site' Template > 'Event Calendar' Stylesheet
+   
+   * This is loaded by any page that loads 
+     the include 'event-calendar.php'
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   	
+	.events-calendar-view table th {
+		background-color:#585858;
+		border-bottom:1px solid #434343;
+		border-right:1px solid #585858;
+		color:#FFFFFF;
+		font-size:13px;
+		font-weight:400;
+		padding:5px 3px;
+		background-image:url(../images/bg-eventcal-header.gif);
+		background-position:top left;
+		background-repeat:repeat-x;		
+	}
+		.events-calendar-view table tbody tr td.weekday {
+			background-color:#6CB1D1;
+			border-bottom:1px solid #5691AC;
+			color:#FFFFFF;
+			font-size:1em;
+			padding:3px;
+			text-align:center;
+		}
+		.events-calendar-view table td.day {
+			border-bottom:1px solid #B9B9B9;
+			border-right:1px solid #B9B9B9;
+			color:#333333;
+			font-size:1em;
+			font-weight:400;
+			padding:5px;
+			text-align:right;
+		}
+		.events-calendar-view table td a {
+			color:#333333;
+			text-decoration:underline;
+		}
+			.events-calendar-view table td a:hover {
+				color:#666666;
+				text-decoration:none;
+			}
+		.events-calendar-view table td.inactive {
+			color:#BDBDBD;
+		}
+		.events-calendar-view table td.current {
+			background-color:#CCCCCC;
+			font-weight:bold;
+		}
+		.events-calendar-view table td.today {
+			background-color:#FFF5C8;
+			border-left:1px solid #E7DCA9;
+			border-top:1px solid #E7DCA9;
+		}
+		.events-calendar-prev {
+			left:8px;
+			position:absolute;
+			top:5px;
+		}
+			.events-calendar-prev a {
+				color:#CCCCCC;
+				text-decoration:underline;
+			}
+				.events-calendar-prev a:hover {
+					color:#FFFFFF;
+					text-decoration:none;
+				}
+		.events-calendar-next {
+			position:absolute;
+			right:8px;
+			top:5px;
+		}
+			.events-calendar-next a {
+				color:#CCCCCC;
+				text-decoration:underline;
+			}
+				.events-calendar-next a:hover {
+					color:#FFFFFF;
+					text-decoration:none;
+				}

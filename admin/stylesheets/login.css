@@ -1,0 +1,214 @@
+/* ------------------------------------------------
+
+   'Admin' Template Stylesheet
+   (loaded by Template: 'site.php')
+	
+   * This stylesheet is loaded by any page that
+ 	 that uses the default 'Admin' template.
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=GLOBAL FORMS
+   ------------------------------------------------ */
+
+	input.field-medium {
+		background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+		border: 1px solid #c3c3c3; 
+		border-top-color: #7c7c7c; 
+		border-bottom-color: #dddddd;
+		font-size:13px;
+		color:#333333;
+		padding:3px;
+		width: 200px;
+	}
+	input.btn-submit {
+		font-size:14px;
+		padding:3px 6px;
+		margin-right:15px;
+	}
+	label {
+		position:relative;
+		margin-right:10px;
+	}
+
+/* ------------------------------------------------
+	=GLOBAL STRUCTURE
+   ------------------------------------------------ */
+
+	body {
+		background-color:#f6f6f6;
+		background-image: url(../images/bg-login-header.gif);
+		background-position:top left;
+		background-repeat:repeat-x;
+		color:#333333;	
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;	
+		margin:0px;
+		padding:0px;
+	}
+	
+	/* -----------------------
+		=HEADER
+	   ----------------------- */
+	   
+		#header-container {
+	   		margin:auto;
+			width:960px;
+		}
+			
+			#ssm-tools {
+				font-size: 11px;
+				height: 25px;
+				line-height: 25px;				
+			}
+				
+				/* FLINT BRANDING */
+				#ssm-tools p.ssm-branding {
+					color: #999999;
+					float: left;
+					margin:0px;
+				}
+					#ssm-tools p.ssm-branding span.seen {
+						color: #ffffff;
+						margin:0px 3px 0px 3px;
+						background-color:#CB242A;
+						padding:0px 2px;
+						font-weight:800;
+					}
+					
+				/* USER ACCOUNT NAV */
+				#ssm-tools p.user-greeting {
+					color: #b1b1b1;
+					float: right;
+					margin:0px;
+				}
+					#ssm-tools p.user-greeting a {
+						border-bottom:dotted 1px #cccccc;
+						color: #b1b1b1;
+						text-decoration:none;
+					}
+						#ssm-tools p.user-greeting a:hover {
+							border-bottom:dotted 1px #cccccc;
+							color:#FFFFFF;
+							text-decoration:none;							
+						}					
+		
+	/* -----------------------
+		=CONTENT
+	   ----------------------- */
+		
+		#content-container {
+			width:650px;
+			font-size:12px;
+			margin:75px auto 25px auto;
+		}
+			#content-container #company-logo {
+				margin:0px 0px 15px 0px;
+				padding-right:15px;
+				text-align:center;
+			}
+				#company-logo h1 {
+					font-size:42px;
+					font-weight:400;
+					color:#333333;
+					letter-spacing:-0.025px;
+				}
+			
+			#content-container #login-container {
+				background-image:url(../images/bg-login-container.gif);
+				background-position:5px 0px;
+				background-repeat:repeat-x;
+				margin-bottom:25px;
+				padding:0px 5px 5px 0px;
+			}
+				#login-container #login-form {
+					padding:33px 22px 33px 22px;
+					background-color:#ffffff;
+					border:solid 5px #81b1cd;
+					margin-left:-5px;
+				} 
+				
+					#login-form h2.login-form-title {
+						color:#333333;
+						font-size:20px;
+						font-weight:400;
+						margin-bottom:27px;
+						position:relative;
+					} 
+						h2.login-form-title .forgot-password {
+							position:absolute;
+							top:7px;
+							right:0px;
+							font-size:12px;
+						}
+							.forgot-password a {
+								color:#b1b1b1;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;
+							}
+								.forgot-password a:hover {
+									color:#999999;
+									text-decoration:none;
+									border-bottom:dotted 1px #cccccc;
+								}		 	 
+					
+					#login-form .login-form-row {
+						border-top:solid 1px #efefef;
+						border-bottom:solid 1px #efefef;
+						padding:22px 0px 22px 0px;
+						position:relative;
+						overflow:hidden;
+						color:#666666;
+					} 
+						.login-form-row .row-item {
+							float:left;
+							width:290px;
+						} 
+					
+					#login-form .login-form-submit {
+						margin-top:15px;
+						color:#999999;
+					} 
+				
+			#content-container #content-footer {
+				margin-top:15px;
+				text-align:center;
+				font-size:12px;
+			} 
+				#content-footer p.footer-links {
+					color:#cccccc;
+					margin-bottom:10px;
+				} 
+					p.footer-links a {
+						color:#999999;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;
+					} 
+						p.footer-links a:hover {
+							color:#666666;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;
+						} 
+				#content-footer p.footer-copyright {
+					font-size:11px;
+					color:#cccccc;
+					margin-bottom:10px;
+				} 
+				#content-footer .footer-poweredby {
+					margin-bottom:10px;
+					color:#666666;
+				}
+		
+	
+	/* -----------------------
+		=FOOTER
+	   ----------------------- */
+	   
+	  #footer-container {
+	  	background-color:#f3f3f3;
+		border-top:solid 1px #e5e5e5;
+		min-height:50px;
+		margin:0px;
+		clear:both;
+	  }

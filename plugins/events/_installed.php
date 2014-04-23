@@ -1,0 +1,1 @@
+/* Just here as an easy way to ensure plugin is installed. */

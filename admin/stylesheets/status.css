@@ -1,0 +1,118 @@
+										
+	/* --- Requirements --- */
+	#installation-requirements {
+		text-align:center;
+		margin:15px auto 35px auto;
+		width:550px;
+	}
+	
+		#installation-requirements p {
+			color:#999999;
+			margin:0px;
+		}
+			
+		#installation-requirements h2.success {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#40b940;
+			background-image:url(../images/icon-requirements-success.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:5px 0px 5px 40px;
+			width:420px;
+		}
+		
+		#installation-requirements h2.warning {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#ffb432;
+			background-image:url(../images/icon-requirements-warning.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:5px 0px 5px 40px;
+			width:420px;
+		}
+		
+		#installation-requirements h2.failure {
+			margin:0px auto 0px auto;
+			font-size:18px;
+			font-weight:400;
+			color:#f26565;
+			background-image:url(../images/icon-requirements-failure.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding:3px 0px 5px 40px;
+			width:420px;
+		}
+		
+		h3 {
+			margin:15px auto 15px auto;
+			width:550px;
+			padding:0px;
+			color:#999999;
+			/*margin:0px 0px 15px 0px;*/
+			font-weight:400;
+			font-size:12px;
+		}
+		
+		ul.requirements-list {
+			margin:15px auto 35px auto;
+			width:550px;
+			list-style-position:inside;
+			padding:0px;
+		}
+			
+			ul.requirements-list li {
+				list-style-type:none;
+				padding:12px 10px 14px 10px;
+				color:#666666;
+				border-bottom:solid 1px #dadada;
+				border-top:solid 1px #dadada;
+				margin:-1px 0px 0px 0px;
+				position:relative;
+				font-weight:800;
+			}
+			ul.requirements-list li.extensions {
+				padding:20px 0px 14px 10px;
+			}
+				ul.requirements-list li.extensions ul {
+					padding:0px;
+					margin:20px 30px 14px 40px;
+				}
+					ul.requirements-list li.extensions ul li {
+						padding:12px 10px 14px 10px;
+					}
+					ul.requirements-list li.extensions ul li.success {
+						padding:12px 10px 14px 10px;
+					}
+						ul.requirements-list li.extensions ul li.success .status {
+							color:#1f9216;
+						}	
+					
+			ul.requirements-list li .status {
+				position:absolute;
+				right:10px;
+				font-weight:400;
+			}
+			ul.requirements-list li.success {
+				background-color:#e8ffe6;
+			}
+				ul.requirements-list li.success .status {
+					color:#1f9216;
+				}
+			ul.requirements-list li.warning {
+				background-color:#fff3ca;
+			}
+				ul.requirements-list li.warning .status {
+					color:#ee792b;
+				}
+			ul.requirements-list li.fail {
+				background-color:#fff2f2;
+			}
+				ul.requirements-list li.fail .status {
+					color:#D75A5A;
+					font-weight:800;
+				}
+					

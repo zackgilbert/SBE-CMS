@@ -1,0 +1,312 @@
+/* ------------------------------------------------
+
+   SEEN Site Manager > 'Blog Plugin' Stylesheet
+   (loaded by 'blogs*.php' pages in the Admin)
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=BLOGS LINKS
+   ------------------------------------------------ */
+
+   	a.cancel {
+		font-size:1.0em;
+		color:#e50d0d;
+		text-decoration:underline;
+	}
+		a.cancel:hover {
+			font-size:1.0em;
+			color:#FFFFFF;
+			text-decoration:none;
+			background-color:#e50d0d;
+		}
+
+/* ------------------------------------------------
+	=BLOGS FORMS
+   ------------------------------------------------ */
+
+	select.author {
+		color:#333333;
+		font-size:14px;
+		padding-left:2px;
+		width:275px;
+		border-top:solid 1px #7c7c7c;
+		border-left:solid 1px #c3c3c3;
+		border-right:solid 1px #c3c3c3;
+		border-bottom:solid 1px #dddddd;
+		padding-left:2px;
+	}
+	
+	select.status {
+		color:#333333;
+		font-size:14px;
+		padding-left:2px;
+		width:225px;
+		border-top:solid 1px #7c7c7c;
+		border-left:solid 1px #c3c3c3;
+		border-right:solid 1px #c3c3c3;
+		border-bottom:solid 1px #dddddd;
+		padding-left:2px;
+	}
+
+/* ------------------------------------------------
+	=BLOGS CONTENT HEADER
+   ------------------------------------------------ */
+	
+	#blogposts-header {
+		position:relative;
+		overflow:hidden;
+	}	
+		h2.blogposts-title {
+			font-size:16px;
+			font-weight:400;
+			margin:0px;
+			color:#333333;
+			padding:0px 0px 10px 0px;
+		}		
+		p.blogposts-actions {
+			position:absolute;
+			top:0px;
+			right:2px;
+		}
+			
+/* ------------------------------------------------
+	=BLOGS EDIT
+   ------------------------------------------------ */			
+	#edit-header {
+		position:relative;
+		overflow:hidden;
+	}	
+			
+		p.section-path {
+			font-size:12px;
+			color:#999999;
+			margin:0px 0px 5px 0px;
+			background-image:url(../../../admin/images/icon-backtoall.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding-left:20px;
+		}
+			p.section-path a {
+				color:#999999;
+				text-decoration:none;
+			}
+				p.section-path a:hover {
+					color:#666666;
+					text-decoration:none;
+				}
+		
+		h2.edit-title {
+			font-size:20px;
+			font-weight:400;
+			color:#1b1b1b;
+			margin:0px 0px 15px 0px;
+			padding-bottom:5px;
+			border-bottom:solid 1px #dddddd;
+			position:relative;
+		}
+		
+		.edit-delete {
+			position:absolute;
+			top:22px;
+			right:2px;	
+		}
+	
+		.edit-item {
+			padding:0px 0px 10px 0px;
+			border-bottom:solid 1px #dddddd;
+			margin-bottom:15px;
+			position:relative;
+			font-size:12px;
+			color:#666666;
+		}
+
+			.edit-item .author-container {
+				margin-bottom:10px;
+			}
+				.author-container .deleteAuthor {
+					margin-left:7px;
+					margin-top:2px;
+					position:absolute;
+				}
+			.edit-item #authors-loading {
+				padding:5px 0px 5px 0px;
+			}	
+			.edit-item label {
+				font-size:12px;
+				display:block;
+				margin-bottom:3px;
+				color:#666666;
+				width:225px;
+			}
+			.edit-item label.auto-generate {
+				font-size:12px;
+				margin-left:5px;
+				color:#666666;
+				position:absolute;
+				top:-4px;
+				left:80px;
+			}
+			.edit-item p.edit-item-description {
+				font-size:12px;
+				margin-bottom:5px;
+				color:#999999;
+			}
+			.edit-item input.find {
+				font-size:12px;
+				padding:1px 4px;
+			}
+			.edit-item .guide-article-add-btn {
+				margin:15px 0px 10px 0px;
+				font-size:12px;
+			}
+			
+		.guide-article-add-item {
+			font-size:12px;	
+			margin:10px 0px 10px 0px;
+		}
+		
+		.edit-item-media {
+			padding:10px 0px 10px 5px;
+			margin:0px 0px -11px 0px;	
+			border-bottom:solid 1px #CFE3EF;
+			background-color:#ECF3F7;
+		}
+			.edit-item-media h3.edit-item-media-title {
+				font-size:14px;
+				margin-bottom:0px;
+				color:#333333;
+				font-weight:400;
+				padding-left:5px;
+			}
+				h3.edit-item-media-title a {
+					padding:10px 500px 10px 5px;
+					color:#333333;
+					text-decoration:none;
+					outline:none;
+				}
+					h3.edit-item-media-title a:hover {
+						color:#38627A;
+						text-decoration:none;
+					}
+				h3.edit-item-media-title img {
+					margin-right:5px;
+				}
+			.articleimages-container {
+				margin:25px 0px 10px 10px;	
+			}
+				h4.articleimages-title {
+					font-size:12px;
+					font-weight:400;
+					color:#333333;
+					margin-left:15px;
+					margin-bottom:1px;
+				}
+				p.articleimages-description {
+					font-size:11px;
+					color:#999999;
+					margin-left:15px;
+					width:550px;
+				}
+				.articleimages-item {
+					padding:10px 10px 0px 10px;
+					margin:5px 65px 15px 15px;
+					font-size:12px;
+					color:#666666;
+					border:solid 1px #dddddd;
+				}
+					.articleimages-item-add {
+						
+					}
+						.articleimages-item-add .item-add-field {
+							margin-bottom:15px;
+						
+						}
+							.articleimages-item-add h5.add-field-title {
+								font-size:12px;
+								font-weight:400;
+								margin-bottom:10px;
+								border-bottom:solid 1px #dddddd;					
+							}
+					.articleimages-item-delete {
+						margin:5px 0px 10px 0px;				
+					}	
+						.articleimages-item-delete a {
+							color:#333333;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;				
+						}	
+							.articleimages-item-delete a:hover {
+								color:#146AA1;
+								text-decoration:none;
+								border-bottom:dotted 1px #cccccc;				
+							}	
+					.articleimages-item-add-btn {
+						margin:0px 0px 10px 0px;
+					}
+				.sidebar-item {
+					border:solid 1px #ECF3F7;
+					padding:10px;
+					background-color:#f4f8fb;
+					margin-bottom:10px;
+				}
+				
+			.mediaplayer-container {
+				margin:25px 0px 10px 10px;
+			}
+				h4.mediaplayer-title {
+					font-size:12px;
+					font-weight:400;
+					color:#333333;
+					margin-left:15px;
+					margin-bottom:1px;
+				}
+				p.mediaplayer-description {
+					font-size:11px;
+					color:#999999;
+					margin-left:15px;
+					width:550px;
+				}
+				.mediaplayer-item {
+					padding:10px 10px 0px 10px;
+					margin:5px 65px 15px 15px;
+					font-size:12px;
+					color:#666666;
+					border:solid 1px #dddddd;
+				}
+					.mediaplayer-item-add {
+						
+					}
+						.mediaplayer-item-add .item-add-field {
+							margin-bottom:15px;
+						
+						}
+							.mediaplayer-item-add h5.add-field-title {
+								font-size:12px;
+								font-weight:400;
+								margin-bottom:10px;
+								border-bottom:solid 1px #dddddd;					
+							}
+					.mediaplayer-item-add-btn {
+						margin:0px 0px 10px 0px;
+					}
+				.media-item {
+					border:solid 1px #ECF3F7;
+					padding:10px;
+					background-color:#f4f8fb;
+					margin-bottom:10px;
+				}
+		
+		.collapsable {
+			border:solid 1px #CFE3EF;	
+		}
+			
+		.edit-save {
+			margin:30px 0px 10px 0px;	
+			background-color:#FFFDEB;
+			padding:10px;
+			font-size:12px;
+			color:#333333;
+			border-top:solid 2px #FCECC3;
+		}
+		

@@ -1,0 +1,174 @@
+/* ------------------------------------------------
+
+   'Site' Template > Sitewide 'Event' Pages Stylesheet
+   
+   * This is loaded by any page that has the 
+     prefix 'event' (ex: event-index.php).
+
+--------------------------------------------------- */
+
+/* ------------------------------------------------
+	=CONTENT STRUCTURE
+   ------------------------------------------------ */
+   
+   .top-image {
+		position:absolute;
+	}
+   
+   
+   /* ------------------------------------
+		=EVENT SECTION - SUBMIT NEW
+	   ------------------------------------ */
+
+		.event-submitnew-button {
+			padding:10px 10px 7px 10px;
+			background-color:#FDFAE8;
+			margin-bottom:20px;
+			text-align:center;
+			border:solid 1px #ececec;
+		}
+		
+		.event-submitnew {
+			padding:15px;
+			background-color:#FEFDF6;
+			border-top:solid 1px #f7f2d2;
+			border-left:solid 1px #f7f2d2;
+			border-bottom:solid 1px #EFE8BF;
+			border-right:solid 1px #EFE8BF;
+			margin-bottom:25px;
+		}
+			.event-submitnew h3.submitnew-title {
+				font-size:16px;
+				font-weight:400;
+				color:#333333;
+				padding-bottom:3px;
+				border-bottom:solid 1px #dcdcdc;
+				margin-bottom:10px;		
+			}
+			.event-submitnew .submitnew-item {
+				padding:10px 0px 10px 2px;
+				border-bottom:solid 1px #ececec;
+				margin-top:-1px;
+				overflow:hidden;
+				position:relative;
+			}
+				.submitnew-item .item-eventtime {
+					float:left;
+					color:#666666;
+					width:460px;
+				}
+					.item-eventtime .eventtime-row {
+						margin-top:6px;
+						margin-bottom:6px;
+						display: block;
+					}
+				.submitnew-item p.item-description {
+					margin-left:10px;
+					color:#999999;
+					font-size:11px;
+					position:absolute;
+					top:14px;
+					right:0px;
+					width:155px;
+				}
+				.submitnew-item #event-location-container {
+					color:#999999;
+				}
+					a.location-choose {
+						color:#666666;
+						text-decoration:none;
+						border-bottom:dotted 1px #999999;
+					}
+						a.location-choose:hover {
+							color:#146AA1;
+							text-decoration:none;
+							border-bottom:dotted 1px #146AA1;
+						}
+				.submitnew-item label {
+					float:left;
+					display:block;
+					margin:2px 15px 0px 0px;
+					width:90px;
+					color:#666666;
+				}
+				.submitnew-item input.field-medium {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					color:#333333;
+					padding:3px;
+					width: 300px;	
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:12px;
+				}
+				.submitnew-item input.field-date {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					color:#333333;
+					padding:3px;
+					width: 85px;	
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:12px;
+				}
+				.submitnew-item textarea {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					color:#333333;
+					padding:3px;
+					width:300px;
+					height:65px;
+					font-size:12px;
+					font-family:Arial, Helvetica, sans-serif;
+					line-height:18px;
+				}
+				.submitnew-item select {
+					background: #ffffff url(../images/bg-field.gif) repeat-x top; 
+					border: 1px solid #c3c3c3; 
+					border-top-color: #7c7c7c; 
+					border-bottom-color: #dddddd;
+					color:#333333;
+					font-size:12px;
+					font-family:Arial, Helvetica, sans-serif;
+				}
+				.submitnew-item select.venues {
+					width:309px;
+				}
+				.submitnew-item-submit input.submit {
+					padding:3px 5px 3px 5px;
+					font-size:14px;
+					margin-right:5px;
+				}
+				
+			.event-submitnew .submitnew-item-submit {
+				padding:25px 0px 10px 2px;
+				margin-top:-1px;
+				overflow:hidden;
+				position:relative;
+			}
+				.submitnew-item-submit img {
+					float:left;
+					margin:-5px 10px 0px 0px;
+				}
+			
+			a.cancel-changes {
+				color:#c8292a;
+				text-decoration:none;
+				border-bottom:dotted 1px #c8292a;
+			}
+				a.cancel-changes:hover {
+					color:#e05e5f;
+					text-decoration:none;
+					border-bottom:dotted 1px #c8292a;
+				}
+				
+			.event-submitnew input.required,
+			.event-submitnew select.required,
+			.event-submitnew textarea.required {
+				border: 1px solid #fff0f0;
+				background-color: #ffa4a4;
+			}

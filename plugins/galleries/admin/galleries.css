@@ -1,0 +1,375 @@
+/* ------------------------------------------------
+
+   SEEN Site Manager > 'Gallery Plugin' Stylesheet
+   (loaded by 'galleries*.php' pages in the Admin)
+
+--------------------------------------------------- */
+
+@import url(jquery.fancybox-1.2.6.css);
+
+/* ------------------------------------------------
+	=GALLERIES LINKS
+   ------------------------------------------------ */
+
+   	a.cancel {
+		font-size:1.0em;
+		color:#e50d0d;
+		text-decoration:underline;
+	}
+		a.cancel:hover {
+			font-size:1.0em;
+			color:#FFFFFF;
+			text-decoration:none;
+			background-color:#e50d0d;
+		}
+
+/* ------------------------------------------------
+	=GALLERIES FORMS
+   ------------------------------------------------ */
+
+	
+	
+
+/* ------------------------------------------------
+	=GALLERIES CONTENT HEADER
+   ------------------------------------------------ */
+	
+	#galleries-header {
+		position:relative;
+		overflow:hidden;
+	}	
+		h2.galleries-title {
+			font-size:16px;
+			font-weight:400;
+			margin:0px;
+			color:#333333;
+			padding:0px 0px 10px 0px;
+		}		
+		p.galleries-actions {
+			position:absolute;
+			top:0px;
+			right:2px;
+		}
+
+/* ------------------------------------------------
+	=GALLERIES RESULTVIEWS
+   ------------------------------------------------ */
+
+	.galleries-resultview {
+		border-top:solid 1px #ececec;
+		border-bottom:solid 1px #ececec;
+		margin-top:-1px;
+		padding:12px 0px 12px 0px;
+		position:relative;
+		overflow: hidden;
+	}
+		.galleries-resultview .resultview-thumbs {
+			float:left;
+			margin-right:15px;
+			width:116px;
+			height:118px;
+			padding-left:6px;
+			background-image:url(../images/bg-album-thumb.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			.galleries-resultview img.content-resultview-pic {
+				border:solid 1px #999999;
+			}
+		.galleries-resultview h3.resultview-name {
+			font-size:18px;
+			font-weight:400;
+			color:#333333;
+			letter-spacing:-.25px;
+			margin-bottom:8px;
+		}
+			.galleries-resultview h3.resultview-name a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #999999;
+			}
+				.galleries-resultview h3.resultview-name a:hover {
+					color:#c8292a;
+					text-decoration:none;
+					border-bottom:dotted 1px #999999;
+				}
+		.galleries-resultview span.resultview-photos {
+				margin-left:5px;
+				color:#CCCCCC;			
+			}
+		.galleries-resultview p.resultview-stats {
+			font-size:11px;
+			line-height:16px;
+			color:#999999;
+			margin-top:10px;			
+		}
+		.galleries-resultview p.resultview-description {
+			font-size:12px;
+			line-height:16px;
+			color:#666666;
+		}
+		.galleries-resultview p.resultview-datepublished {
+			font-size:11px;
+			line-height:16px;
+			color:#999999;
+			margin-top:10px
+		}
+		.galleries-resultview .resultview-tools {
+			position:absolute;
+			top:15px;
+			right:2px;
+			font-size:12px;
+			line-height:16px;
+			color:#999999;
+		}	
+			.galleries-resultview .resultview-tools a {
+				color:#333333;
+				text-decoration:none;
+				border-bottom:dotted 1px #cccccc;
+			}
+				.galleries-resultview .resultview-tools a:hover {
+					color:#146AA1;
+					text-decoration:none;
+					border-bottom:dotted 1px #cccccc;
+				}
+			
+			
+/* ------------------------------------------------
+	=GALLERIES EDIT
+   ------------------------------------------------ */			
+		
+		p.section-path {
+			font-size:12px;
+			color:#999999;
+			margin:0px 0px 5px 0px;
+			background-image:url(../../../admin/images/icon-backtoall.gif);
+			background-position:top left;
+			background-repeat:no-repeat;
+			padding-left:20px;
+		}
+			p.section-path a {
+				color:#999999;
+				text-decoration:none;
+			}
+				p.section-path a:hover {
+					color:#666666;
+					text-decoration:none;
+				}
+		
+		h2.galleries-edit-title {
+			font-size:20px;
+			font-weight:400;
+			color:#1b1b1b;
+			margin:0px 0px 15px 0px;
+			padding-bottom:5px;
+			border-bottom:solid 1px #dddddd;
+			position:relative;
+		}
+		
+		.edit-delete {
+			position:absolute;
+			top:22px;
+			right:2px;	
+		}
+		
+		h3.gallery-item-title {
+			font-size:14px;
+			font-weight:400;
+			color:#333333;
+			border-bottom:solid 1px #dcdcdc;
+			padding-bottom:3px;
+			margin:20px 0px 10px 0px;
+		}
+			dl {
+				overflow:hidden;
+			}
+			dt {
+				font-size:12px;
+				color:#333333;
+				width:145px;
+				text-align:right;
+				margin-right:19px;
+				margin-bottom:10px;
+				float:left;
+				padding-top:4px;
+			}
+			dd {
+				margin-bottom:10px;
+			}
+		
+			.gallery-item-thumb {
+				/*float:left;*/
+				margin-right:12px;
+				/*margin-bottom:25px;*/
+				border:solid 1px #dadada;
+			}			
+				label.upload-title {
+					font-size:12px;
+					font-weight:400;
+					color:#333333;
+					margin-bottom:0px;
+					margin-top:5px;
+				}
+			
+			p.gallery-thumb-instructions {
+				color:#999999;
+				font-size:11px;
+				margin-bottom:10px;
+			}
+			.delete-thumb {
+				font-size:11px;
+				color:#999999;
+				margin-top:25px;
+				margin-bottom:30px;
+			}
+	
+		.edit-item {
+			padding:0px 0px 10px 0px;
+			border-bottom:solid 1px #dddddd;
+			margin-bottom:15px;
+			position:relative;
+			font-size:12px;
+			color:#666666;
+		}
+			.edit-item label {
+				font-size:12px;
+				display:block;
+				margin-bottom:3px;
+				color:#666666;
+				width:225px;
+			}
+			.edit-item label.auto-generate {
+				font-size:12px;
+				margin-left:5px;
+				color:#666666;
+				position:absolute;
+				top:-4px;
+				left:80px;
+			}
+			.edit-item p.edit-item-description {
+				font-size:12px;
+				margin-bottom:5px;
+				color:#999999;
+			}
+		
+		/*.album-photo-item {
+			padding:10px 10px 0px 10px;
+			margin:25px 0px 35px 0px;
+			font-size:12px;
+			color:#666666;
+			border:solid 1px #dddddd;
+			width:350px;
+		}
+			.album-photo-item-add {
+				
+			}
+				.album-photo-item-add .item-add-field {
+					margin-bottom:15px;		
+				}
+					.album-photo-item-add .item-add-field a {
+						margin-bottom:15px;		
+					}
+					.album-photo-item-add label {
+						display:block;	
+						margin-bottom:3px;		
+					}
+					.album-photo-item-add .tools a {
+						margin:0px;
+						color:#333333;
+						text-decoration:none;
+						border-bottom:dotted 1px #cccccc;	
+					}
+						.album-photo-item-add .tools a:hover {
+							color:#146AA1;
+							text-decoration:none;
+							border-bottom:dotted 1px #cccccc;	
+						}
+						
+			.album-photo-item-add-btn {
+				margin:0px 0px 10px 0px;
+			}*/
+		
+		.photos-add-btn {
+			clear: both;
+			margin:0px 0px 10px 0px;
+		}
+		
+		.photos-container {
+			overflow:hidden;
+			margin-top:25px;
+		}
+			.photo-item:first-child {
+				 margin-left:0px;
+			}
+			.photo-item {
+				float:left;
+				width:215px;
+				margin:0px 8px 10px 0px;	
+				padding:10px;
+				border:solid 1px #ededed;
+				position: relative;
+			}
+				.photo-item .photo-thumb {
+					float:left;
+					margin:0px 10px 10px 0px
+				}
+				.photo-item h4 {
+					font-size:12px;
+					font-weight:400;
+					color:#333333;
+					margin:0px 0px 5px 0px;
+				}
+				.photo-item p {
+					font-size:11px;
+					color:#666666;
+					margin:0px 0px 5px 0px;
+				}
+				.photo-item .tools {
+					clear:left;
+					font-size:12px;
+					margin-top:15px;
+					text-align:right;
+					position: absolute;
+					top: -10px;
+					right: 5px;
+				}
+					.photo-item .tools a {
+						color:#666666;
+						text-decoration:none;
+						/*border-bottom:dotted 1px #cccccc;*/
+					}
+						.photo-item .tools a:hover {
+							color:#146AA1;
+							text-decoration:none;
+							/*border-bottom:dotted 1px #cccccc;*/
+						}
+			
+			.photos-container .item-add {
+				background-color:#FFFDEB;
+				border:solid 1px #FCECC3;
+				padding:0px 15px 10px 15px;
+				bottom-top:10px;
+				width:95%;
+				font-size:12px;
+				color:#333333;
+				clear: both;
+			}
+				.item-add label {
+					clear:both;
+					display:block;
+					margin:10px 0px 2px 0px;
+				}		
+		
+		.collapsable {
+			border:solid 1px #CFE3EF;	
+		}
+			
+		.edit-save {
+			margin:30px 0px 10px 0px;	
+			background-color:#FFFDEB;
+			padding:10px;
+			font-size:12px;
+			color:#333333;
+			border-top:solid 2px #FCECC3;
+		}
+		
